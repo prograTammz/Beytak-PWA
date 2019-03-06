@@ -1,0 +1,153 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#topNavBar{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+}
+
+.ancElm{
+    color: #575757;
+}
+.navTitle{
+    color: #517FA4;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Tenor sans',sans-serif;
+    justify-content: center;
+    margin: 0px 20px;
+    text-align: center;
+}
+.navMenu{
+    justify-self: flex-start;
+    margin-left: 15px;
+}
+.navSearch{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.navFav{
+    margin-left: auto;
+}
+.deskItems{
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    margin: 0 15px;
+    display: none;
+}
+#bottomNavBar{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 -3px 6px rgba(0,0,0,0.16);
+    position: fixed;
+    bottom: 0;
+}
+.bottomNavElm{
+    color: #575757;
+    margin: 0px 15px;
+}
+.active{
+    color: #517FA4;
+    
+}
+.centerElm{
+    background-color: #517FA4;
+    text-decoration: none;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.16), 0 0px 10px rgba(0,0,0,0.23);
+}
+.centerElm i{
+    color: white;
+
+}
+@media only screen and (max-width: 600px){
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 801px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+
+    #topNavBar{
+        box-shadow: none;
+    }
+    #bottomNavBar{
+        display: none;
+    }
+    .deskItems{
+        display: inline;
+    }
+    .navFav{
+        display: none;
+    
+    }
+    .navSearch{
+        margin-left: auto;
+    }
+  }
