@@ -2,7 +2,7 @@
     let cardElm = `<div class="card-asset-container col-es-4 col-s-6 col-4">
             <div class ="anything">
             <div class="card-asset ">
-                <div class="img-cont card-asset-img" style = "background-image: url(./asset-1.jpg)">
+                <div class="img-cont card-asset-img" style = "background-image: url(./asset-1.webp)">
                 </div>
                 <div class="card-asset-content">
                     <div class="row">
