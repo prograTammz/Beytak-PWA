@@ -34,6 +34,9 @@ body{
     align-items: center;
     justify-content: flex-start;
     box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+    position: fixed;
+    top: 0;
+    background-color: white;
 }
 
 .ancElm{
@@ -107,14 +110,15 @@ body{
 }
 #pageContent{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: center;
     flex-wrap: wrap;
+    margin-top: 55px;
 }
 .img-cont{
     display: flex;
     align-content: center;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
 }
 .card-asset-type,.card-asset-loc{
     color: #517FA4;
@@ -128,6 +132,9 @@ body{
     align-content: center;
     position: relative;
     
+}
+.anything{
+    padding: 8px 8px;
 }
 .icon-container{
     width: 24px;
@@ -157,9 +164,8 @@ body{
 }
 .card-asset-img{
     height: 250px;
-}
-.card-asset-img img{
-    border-radius: 8px 8px 0px 0px;
+    background-position: center;
+    background-size: cover;
 }
 .card-asset{
     border-radius: 8px;
@@ -180,7 +186,7 @@ body{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 500px){
     .col-es-1 {width: 25%;}
     .col-es-2 {width: 50%;}
     .col-es-3 {width: 75%;}
@@ -190,7 +196,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 800px) {
+@media only screen and (min-width: 501px) and (max-width: 900px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -209,7 +215,7 @@ body{
     }
   }
   
-  @media only screen and (min-width: 801px) {
+  @media only screen and (min-width: 901px) {
     /* For desktop: */
     
     #pageContent{
