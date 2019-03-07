@@ -25,6 +25,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Roboto',sans-serif;
 }
 #topNavBar{
     width: 100%;
@@ -74,6 +75,7 @@ body{
     box-shadow: 0 -3px 6px rgba(0,0,0,0.16);
     position: fixed;
     bottom: 0;
+    background-color: white;
 }
 .bottomNavElm{
     color: #575757;
@@ -98,8 +100,94 @@ body{
     color: white;
 
 }
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+#pageContent{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.img-cont{
+    display: flex;
+    align-content: center;
+    border-radius: 8px;
+}
+.card-asset-type,.card-asset-loc{
+    color: #517FA4;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+}
+.center-vertically{
+    display: flex;
+    align-content: center;
+    position: relative;
+    
+}
+.icon-container{
+    width: 24px;
+    position: relative;
+}
+.card-asset-icon{
+    color: #517FA4;
+}
+.icon-container i{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.card-asset-detail{
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #575757;
+}
+.card-asset-desc{
+    margin: 5px 0;
+    font-weight: bold;
+    color: #575757;
+}
+.card-asset-img{
+    height: 250px;
+}
+.card-asset-img img{
+    border-radius: 8px 8px 0px 0px;
+}
+.card-asset{
+    border-radius: 8px;
+    box-shadow: 0 0px 38px rgba(0,0,0,0.23);
+}
+.card-asset-content{
+    padding: 0px 20px;
+}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 @media only screen and (max-width: 600px){
-
+    .col-es-1 {width: 25%;}
+    .col-es-2 {width: 50%;}
+    .col-es-3 {width: 75%;}
+    .col-es-4 {width: 100%;}
+    #pageContent{
+        padding: 16px;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
@@ -116,23 +204,19 @@ body{
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
+    #pageContent{
+        padding: 24px;
+    }
   }
   
   @media only screen and (min-width: 801px) {
     /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-
+    
+    #pageContent{
+        padding: 36px;
+        max-width: 1200px;
+        margin: auto;
+    }
 
     #topNavBar{
         box-shadow: none;
