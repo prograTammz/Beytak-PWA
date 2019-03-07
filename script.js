@@ -54,7 +54,7 @@
         </div>`
     let pageContent = document.getElementById("pageContent");
     pageContent.innerHTML= cardElm;
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 15; i++) {
         pageContent.innerHTML += cardElm
         
     }
