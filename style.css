@@ -1,3 +1,11 @@
+/* ---------------------------------------------------------------------- */
+/* ----------------------GLOBAL STYLING-------------------------------- */
+/* ------------------------------------------------------------------- */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+}
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -10,23 +18,133 @@
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
     /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-  
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
-body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto',sans-serif;
+#pageContent{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 55px;
+    margin-bottom: 56px;
 }
+.img-cont{
+    display: flex;
+    align-content: center;
+    border-radius: 8px 8px 0px 0px;
+}
+.center-vertically{
+    display: flex;
+    align-content: center;
+    position: relative;
+    
+}
+.icon-container{
+    width: 24px;
+    position: relative;
+}
+/* ---------------------------------------------------------------------- */
+/* ----------------------Responsive Grid-------------------------------- */
+/* ------------------------------------------------------------------- */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+@media only screen and (max-width: 500px){
+    .col-es-1 {width: 25%;}
+    .col-es-2 {width: 50%;}
+    .col-es-3 {width: 75%;}
+    .col-es-4 {width: 100%;}
+    #pageContent{
+        padding: 16px;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    #pageContent{
+        padding: 24px;
+    }
+}
+@media only screen and (min-width: 901px) {
+    /* For desktop: */
+    #pageContent{
+        padding: 36px;
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+/* ---------------------------------------------------------------------- */
+/* ---------------------------Bottom NAV-------------------------------- */
+/* ------------------------------------------------------------------- */
+#bottomNavBar{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 -3px 6px rgba(0,0,0,0.16);
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+.bottomNavElm{
+    color: #575757;
+    margin: 0px 15px;
+}
+.active{
+    color: #517FA4;
+    
+}
+.centerElm{
+    background-color: #517FA4;
+    text-decoration: none;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.16), 0 0px 10px rgba(0,0,0,0.23);
+}
+.centerElm i{
+    color: white;
+
+}
+/* ---------------------------------------------------------------------- */
+/* -----------------------------TOP NAV-------------------------------- */
+/* ------------------------------------------------------------------- */
 #topNavBar{
     width: 100%;
     height: 55px;
@@ -70,57 +188,9 @@ body{
     margin: 0 15px;
     display: none;
 }
-#bottomNavBar{
-    width: 100%;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: 0 -3px 6px rgba(0,0,0,0.16);
-    position: fixed;
-    bottom: 0;
-    background-color: white;
-}
-.bottomNavElm{
-    color: #575757;
-    margin: 0px 15px;
-}
-.active{
-    color: #517FA4;
-    
-}
-.centerElm{
-    background-color: #517FA4;
-    text-decoration: none;
-    height: 56px;
-    width: 56px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0px 10px rgba(0,0,0,0.16), 0 0px 10px rgba(0,0,0,0.23);
-}
-.centerElm i{
-    color: white;
-
-}
-.row{
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-}
-#pageContent{
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-top: 55px;
-}
-.img-cont{
-    display: flex;
-    align-content: center;
-    border-radius: 8px 8px 0px 0px;
-}
+/* ---------------------------------------------------------------------- */
+/* -----------------------------Big CARD-------------------------------- */
+/* ------------------------------------------------------------------- */
 .card-asset-type,.card-asset-loc{
     color: #517FA4;
     font-weight: bold;
@@ -128,19 +198,7 @@ body{
     font-size: 14px;
     display: inline-block;
 }
-.center-vertically{
-    display: flex;
-    align-content: center;
-    position: relative;
-    
-}
-.anything{
-    padding: 8px 8px;
-}
-.icon-container{
-    width: 24px;
-    position: relative;
-}
+
 .card-asset-icon{
     color: #517FA4;
 }
@@ -175,70 +233,36 @@ body{
 .card-asset-content{
     padding: 0px 20px;
 }
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-@media only screen and (max-width: 500px){
-    .col-es-1 {width: 25%;}
-    .col-es-2 {width: 50%;}
-    .col-es-3 {width: 75%;}
-    .col-es-4 {width: 100%;}
-    #pageContent{
-        padding: 16px;
-    }
+.card-outer-space{
+    padding: 8px 8px;
 }
 
+@media only screen and (max-width: 500px){
+    /* mobile break points */
+}
 @media only screen and (min-width: 501px) and (max-width: 900px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-    #pageContent{
-        padding: 24px;
-    }
-  }
-  
-  @media only screen and (min-width: 901px) {
-    /* For desktop: */
-    
-    #pageContent{
-        padding: 36px;
-        max-width: 1200px;
-        margin: auto;
-    }
+    /* Tablet breakpoints */
 
+  }
+@media only screen and (min-width: 901px) {
+    /* For desktop: */
+
+    /* TOP NAV STYLING */
     #topNavBar{
         box-shadow: none;
-    }
-    #bottomNavBar{
-        display: none;
     }
     .deskItems{
         display: inline;
     }
     .navFav{
         display: none;
-    
     }
     .navSearch{
         margin-left: auto;
     }
+    /* BOTTOM NAV STYLING */
+    #bottomNavBar{
+        display: none;
+    }
+   
   }

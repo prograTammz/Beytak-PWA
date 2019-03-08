@@ -3,7 +3,7 @@
 //currently it's has fixed data (NOT DONE).
 function fillContWithBigCard(id,data){
     let cardElm = `<div class="card-asset-container col-es-4 col-s-6 col-4">
-            <div class ="anything">
+            <div class ="card-outer-space">
             <div class="card-asset ">
                 <div class="img-cont card-asset-img" style = "background-image: url(./asset-1.webp)">
                 </div>
