@@ -5,6 +5,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Roboto',sans-serif;
+    position: relative;
 }
 .material-icons {
     font-family: 'Material Icons';
@@ -49,6 +50,15 @@ body{
 .icon-container{
     width: 24px;
     position: relative;
+}
+.divider{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.10)
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
 }
 /* ---------------------------------------------------------------------- */
 /* ----------------------Responsive Grid-------------------------------- */
@@ -97,12 +107,11 @@ body{
     #pageContent{
         padding: 36px;
         max-width: 1200px;
-        margin: auto;
     }
 }
 .row{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-content: center;
 }
 /* ---------------------------------------------------------------------- */
@@ -236,7 +245,63 @@ body{
 .card-outer-space{
     padding: 8px 8px;
 }
-
+/* ---------------------------------------------------------------------- */
+/* -----------------------------NAV drawer----------------------------- */
+/* ------------------------------------------------------------------- */
+#navigation-drawer{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.16);
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+}
+.no-scroll{
+    overflow: hidden;
+}
+.show-drawer{
+    display: block !important;
+}
+#drawer-container{
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.20);
+    padding: 20px;
+    
+}
+.drawer-profile-pic{
+    border-radius: 50%;
+}
+.drawer-header{
+    font-weight: 100;
+    margin: 5px 0px;
+}
+.drawer-subtitle{
+    margin: 5px 0px;
+}
+.drawer-item-title{
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #575757;
+}
+.drawer-item-container{
+    transition: all 0.2s ease;
+    cursor: pointer;
+    padding: 0px 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+.drawer-item-container:hover{
+    background-color: rgba(81,127,164,0.10)
+}
+.drawer-test{
+    height: 800px;
+    width: 100%;
+}
 @media only screen and (max-width: 500px){
     /* mobile break points */
 }

@@ -61,7 +61,20 @@ function fillContWithBigCard(id,data){
             
         };
 }   
-   
+
+
+function toggleDrawer(event){
+    document.body.scrollTop= 0;
+    document.documentElement.scrollTop = 0;
+    var scrollToggled = document.body.classList.toggle("no-scroll");
+    var drawerToggled = document.getElementById("navigation-drawer").classList.toggle("show-drawer");
+    
+    if(drawerToggled && scrollToggled && event.target.className == "material-icons"){
+        event.target.innerHTML="close";
+    }else{
+        event.target.innerHTML="menu";
+    }
+}
 fillContWithBigCard("pageContent");
    
    
