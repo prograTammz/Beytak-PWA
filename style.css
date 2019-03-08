@@ -239,6 +239,7 @@ body{
 .card-asset{
     border-radius: 8px;
     box-shadow: 0 0px 38px rgba(0,0,0,0.23);
+    padding-bottom: 20px;
 }
 .card-asset-content{
     padding: 0px 20px;
