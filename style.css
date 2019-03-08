@@ -107,6 +107,7 @@ body{
     #pageContent{
         padding: 36px;
         max-width: 1200px;
+        margin: 55px auto;
     }
 }
 .row{
@@ -256,6 +257,7 @@ body{
     z-index: 2;
     display: none;
     overflow: hidden;
+    position: fixed;
 }
 .no-scroll{
     overflow: hidden;
