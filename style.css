@@ -355,6 +355,7 @@ body{
     color: #436885;
     padding: 10px;
     margin: 5px 0px 10px 0px;
+    background-color: transparent;
 }
 .landing-search-button{
     text-align: center;
