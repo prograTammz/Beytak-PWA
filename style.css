@@ -315,7 +315,7 @@ body{
     position: relative;
     display: none;
 }
-.landing-head, .landing-search-bar{
+.landing-head, .landing-subtitle{
     color: #575757;
 }
 .landing-content{
