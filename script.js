@@ -68,11 +68,11 @@ function toggleDrawer(event){
     document.documentElement.scrollTop = 0;
     var scrollToggled = document.body.classList.toggle("no-scroll");
     var drawerToggled = document.getElementById("navigation-drawer").classList.toggle("show-drawer");
-    
+    var menuButtonInner = document.querySelector('.navMenu').innerHTML;
     if(drawerToggled && scrollToggled && event.target.className == "material-icons"){
-        event.target.innerHTML="close";
+        menuButtonInner = "close";
     }else{
-        event.target.innerHTML="menu";
+        menuButtonInner = "menu";
     }
 }
 fillContWithBigCard("pageContent");
