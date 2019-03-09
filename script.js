@@ -75,7 +75,7 @@ function toggleDrawer(event){
         menuButtonInner.innerHTML = "menu";
     }
 }
-fillContWithBigCard("pageContent");
+// fillContWithBigCard("pageContent");
    
    
    

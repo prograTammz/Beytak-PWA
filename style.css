@@ -114,6 +114,7 @@ body{
     display: flex;
     justify-content: flex-start;
     align-content: center;
+    width: 100%;
 }
 /* ---------------------------------------------------------------------- */
 /* ---------------------------Bottom NAV-------------------------------- */
@@ -304,6 +305,72 @@ body{
 .drawer-test{
     height: 800px;
     width: 100%;
+}
+.landing-Container{
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.16);
+    position: relative;
+}
+.landing-head, .landing-search-bar{
+    color: #575757;
+}
+.landing-content{
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8%;
+    max-width: 340px;
+}
+.landing-label{
+    color: #436885;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+.landing-search-bar{
+    padding: 5px 10px;
+    margin: 5px 0px 10px 0px;
+    height: 35px;
+    width: calc(100% - 24px);
+    border-color: #436885;
+    border-width: 1px;
+    border-radius: 8px;
+    border-style: solid;
+    color: #436885;
+}
+.landing-search-bar input{
+    border: none;
+}
+.landing-select-menu{
+    height: 40px;
+    border-width: 1px;
+    border-color: #436885;
+    border-radius: 4px;
+    color: #436885;
+    padding: 10px;
+    margin: 5px 0px 10px 0px;
+}
+.landing-search-button{
+    text-align: center;
+    background-color: #436885;
+    border: none;
+    height: 45px;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 0px;
+    margin-left: auto;
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    margin-right: auto;
+    justify-content: center;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+    
 }
 @media only screen and (max-width: 500px){
     /* mobile break points */

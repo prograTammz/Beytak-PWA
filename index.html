@@ -130,6 +130,44 @@
         </div>
     </section>
     <section id="pageContent">
+        <div class="landing-Container col-12" style="background-image: url(./coverImg.jpg)">
+            <div class="landing-content col-5">
+                <h2 class="landing-head">Find your dream real estate with beytak.</h2>
+                <p class="landing-subtitle">Explore numerious real estate offered for rent or sale around the country.</p>
+                    <label class="landing-label" for="search">Where:</label>
+                    <div class="landing-search-bar row">
+                            <div class="icon-container">
+                                    <i class="material-icons center-vertically">search</i>
+                            </div>
+                            
+                            <input type="text" name="search" placeholder="Where to ?">
+                    </div>
+                    <div class="row">
+                            <div class="col-5">
+                                    <label class="landing-label" for="Type">Type:</label>
+                                    <select class="row landing-select-menu"name="type" id="landing-search-type" >
+                                        <option value="" selected disabled hidden>Type</option>
+                                        <option value="Apartment">Apartment</option>
+                                        <option value="Villa">Villa</option>
+                                        <option value="Commerical">Commerical</option>
+                                        <option value="Chalets">Chalets</option>
+                                    </select>
+                            </div>
+                            <div class="col-2"></div>
+                            <div class="col-5">
+                                    <label class="landing-label" for="sale/rent">Sale/Rent</label>
+                                    <select class="row landing-select-menu" name="sale/rent" id="landing-obtain-type">
+                                        <option value="rent" selected>Rent</option>
+                                        <option value="sale">Sale</option>
+                                    </select>
+                            </div>
+                    </div>
+                    
+                    
+                <button class="row landing-search-button">
+                    Search
+                </button>
+        </div>
     </section>
 
     <nav id="bottomNavBar" role = "bottom navigation bar">
