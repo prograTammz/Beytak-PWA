@@ -75,8 +75,45 @@ function toggleDrawer(event){
         menuButtonInner.innerHTML = "menu";
     }
 }
+
+
+
+
+// window.addEventListener('hashchange',function(e){
+//     fillContent(window.location.hash.substr(1));
+    
+    
+// })
+function init(){
+    fillContent("home");
+}
+function Route(name,htmlName,init){
+    this.name = name;
+    this.htmlName = htmlName;
+    this.init = init;
+}
+function goToRoute(name){
+    fillContent(name);
+    var elms = document.getElementsByClassName("bottomNavElm");
+    for (let i = 0; i < elms.length; i++) {
+        elms[i].classList.remove("active");
+        
+    }
+    toggleDrawer();
+}
+function fillContent(page){
+    fetch(`./views/${page}.html`).then(
+        function(res){
+            res.text().then(
+                (content)=>{
+                    document.getElementById("pageContent").innerHTML = content;
+                }
+            );
+        }
+    );
+}
+   
 // fillContWithBigCard("pageContent");
-   
-   
+init();
    
     
