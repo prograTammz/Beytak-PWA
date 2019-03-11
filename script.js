@@ -1,7 +1,7 @@
 //fillContWithBigCard fills the provided container by it's id in the DOM by passing it's id
 //and data provided to fill the card, it loops over each item and generate a card for it.
 //currently it's has fixed data (NOT DONE).
-function fillContWithBigCard(id,data){
+function fillContWithBigCard(selector,data){
     let cardElm = `<div class="card-asset-container col-es-4 col-s-6 col-4">
             <div class ="card-outer-space">
             <div class="card-asset ">
@@ -55,8 +55,8 @@ function fillContWithBigCard(id,data){
                 </div>
             </div>
         </div>`;
-        let pageContent = document.getElementById(id);
-        for (let i = 0; i < 15; i++) {
+        let pageContent = document.querySelector(selector);
+        for (let i = 0; i < 4; i++) {
             pageContent.innerHTML += cardElm
             
         };
@@ -75,6 +75,32 @@ function fillCityCard(selector){
         
     }
     container.style.width = 10*155 +"px";
+}
+function fillNewCard(selector){
+    let card = 
+    `<div class="news-card">
+        <div class="news-card-img col-12"role="img" alt="A picture of a city" style="background-image: url('./img/place-holders/news.jpg')">
+        </div>
+        <h5 class="news-card-head">New project in the new capital</h5>
+        <p class="news-card-desc">Greyhound divisively hello coldly wonderfully marginally far…</p>
+    </div>
+    `;
+    let container = document.querySelector(selector);
+    for (let i = 0; i < 10; i++) {
+       container.innerHTML += card;
+        
+    }
+    container.style.width = 300*10+"px";
+}
+function fillElm(elm,selector,count,scroll,width){
+    let container = document.querySelector(selector);
+    for (let i = 0; i < count; i++) {
+        container.innerHTML += elm;
+         
+     }
+     if(scroll){
+        container.style.width = 10*155 +"px";
+     }
 }
 //toggleDrawer, scrolls the page to the top with 2 approaches one for all
 //browser support and one for IOS safari support,
@@ -133,6 +159,8 @@ function fillContent(page){
                     document.getElementById("pageContent").innerHTML = content;
                     //temp placement
                     fillCityCard(".city-card-inner");
+                    fillNewCard(".news-card-inner ");
+                    fillContWithBigCard(".featured-home-container");
                 }
             );
         }
