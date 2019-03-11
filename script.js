@@ -1,7 +1,7 @@
 //fillContWithBigCard fills the provided container by it's id in the DOM by passing it's id
 //and data provided to fill the card, it loops over each item and generate a card for it.
 //currently it's has fixed data (NOT DONE).
-function fillContWithBigCard(id,data){
+function fillContWithBigCard(selector,data){
     let cardElm = `<div class="card-asset-container col-es-4 col-s-6 col-4">
             <div class ="card-outer-space">
             <div class="card-asset ">
@@ -55,8 +55,8 @@ function fillContWithBigCard(id,data){
                 </div>
             </div>
         </div>`;
-        let pageContent = document.getElementById(id);
-        for (let i = 0; i < 15; i++) {
+        let pageContent = document.querySelector(selector);
+        for (let i = 0; i < 4; i++) {
             pageContent.innerHTML += cardElm
             
         };
@@ -160,6 +160,7 @@ function fillContent(page){
                     //temp placement
                     fillCityCard(".city-card-inner");
                     fillNewCard(".news-card-inner ");
+                    fillContWithBigCard(".featured-home-container");
                 }
             );
         }
