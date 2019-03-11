@@ -384,6 +384,7 @@ body{
 .city-card-container{
     overflow-y: hidden;
     white-space: nowrap;
+    padding: 5px;
 }
 .city-card-inner{
     width: 1650px;
