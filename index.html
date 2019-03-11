@@ -20,7 +20,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
     <meta name="apple-mobile-web-app-title" content="Beytak">
-     <!-- Ios icons links -->
+    <!-- Ios icons links -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./img/icons/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/icons/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/icons/apple-touch-icon-72x72.png" />
@@ -36,7 +36,7 @@
     <link rel="icon" type="image/png" href="./img/icons/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="./img/icons/favicon-128.png" sizes="128x128" />
     <!-- Windows meta tags -->
-    <meta name="application-name" content="Beytak"/>
+    <meta name="application-name" content="Beytak" />
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="./img/icons/mstile-144x144.png" />
     <meta name="msapplication-square70x70logo" content="./img/icons/mstile-70x70.png" />
@@ -49,7 +49,7 @@
 <body>
     <nav id="topNavBar" role="navigation">
         <a class="navMenu ancElm" tabindex="0" role="button" onclick="toggleDrawer(event)"><i class="material-icons">menu</i></a>
-        <a class="navTitle" >Beytak</a>
+        <a class="navTitle">Beytak</a>
         <a class="navFav ancElm " role="button" href="google.com"><i class="material-icons">favorite</i></a>
         <a class="navSearch ancElm " role="button" href="google.com"><i class="material-icons">search</i></a>
         <a class="ancElm deskItems" role="link" href="">SIGN UP</a>
@@ -58,10 +58,10 @@
 
     <section id="navigation-drawer" role="menu">
         <div id="drawer-container" class="col-es-3 col-s-6 col-3">
-            <img src="./img/profile.jpg" class="drawer-profile-pic col-3"alt="A person in the picture">
+            <img src="./img/profile.jpg" class="drawer-profile-pic col-3" alt="A person in the picture">
             <h2 class="drawer-header">Ahmed Tamer</h2>
             <p class="drawer-subtitle">Buyer</p>
-            <div class= "divider"></div>
+            <div class="divider"></div>
 
             <a role="button" class="drawer-item-container row">
                 <div class="icon-container">
@@ -78,10 +78,10 @@
             </a>
 
             <a role="button" class="drawer-item-container row">
-                    <div class="icon-container">
-                        <i class="material-icons center-vertically">library_add</i>
-                    </div>
-                    <p class="drawer-item-title">My posts</p>
+                <div class="icon-container">
+                    <i class="material-icons center-vertically">library_add</i>
+                </div>
+                <p class="drawer-item-title">My posts</p>
             </a>
 
             <a role="button" class="drawer-item-container row">
@@ -91,7 +91,7 @@
                 <p class="drawer-item-title">Likes/Favs</p>
             </a>
 
-            <div class= "divider"></div>
+            <div class="divider"></div>
 
             <a role="button" class="drawer-item-container row">
                 <div class="icon-container">
@@ -128,28 +128,130 @@
                 <p class="drawer-item-title">Renting Schedule</p>
             </a>
             <a onclick="goToRoute('aboutus')" role="button" class="drawer-item-container row">
-                    <div class="icon-container">
-                        <i class="material-icons center-vertically">help</i>
-                    </div>
-                    <p class="drawer-item-title">About us</p>
+                <div class="icon-container">
+                    <i class="material-icons center-vertically">help</i>
+                </div>
+                <p class="drawer-item-title">About us</p>
             </a>
-            </div>
+        </div>
         </div>
     </section>
     <section id="pageContent">
+        <!-- Mobile layout is divided by 4 columns not 4 like the rest -->
+        <div class="fav-container col-es-4 col-s-6 col-4">
+            <div class="row">
+                <div class="col-8">
+                    <div class="fav-boxing">
+                        <h4>Nasr City</h4>
+                        <p>This is a Cool Paragraph YEAAAAAAAAAAAAAA</p>
+                        <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                    </div>
+                    <div class="fav-boxing2">
+                        <h4>Nasr City</h4>
+                        <p>This is a Cool Paragraph YEAAAAAAAAAAAAAA</p>
+                        <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                    </div>
+                    <div class="fav-boxing3">
+                        <h4>Nasr City</h4>
+                        <p>This is a Cool Paragraph YEAAAAAAAAAAAAAA</p>
+                        <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="fav-boxing">
+                        <img class="fav-img" style="background-image: url(./img/place-holders/5.jpg)">
+                    </div>
+                    <div class="fav-boxing2">
+                        <img class="fav-img" style="background-image: url(./img/place-holders/5.jpg)">
+                    </div>
+                    <div class="fav-boxing3">
+                        <img class="fav-img" style="background-image: url(./img/place-holders/5.jpg)">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-8">
+                        <div class="fav-boxing">
+                            <h4>Nasr City</h4>
+                            <p>This is a Cool Paragraph YEAAAAAAAAAAAAAA</p>
+                            <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                        </div>
+                        <div class="fav-boxing2">
+                            <h4>Nasr City</h4>
+                            <p>This is a Cool Paragraph YEAAAAAAAAAAAAAA</p>
+                            <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                        </div>
+                        <div class="fav-boxing3">
+                            <h4>Nasr City</h4>
+                            <p>This is a Cool Paragraph YEAAAAAAAAAAAAAA</p>
+                            <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="fav-boxing">
+                            <img class="fav-img" style="background-image: url(./img/place-holders/5.jpg)">
+                        </div>
+                        <div class="fav-boxing2">
+                            <img class="fav-img" style="background-image: url(./img/place-holders/5.jpg)">
+                        </div>
+                        <div class="fav-boxing3">
+                            <img class="fav-img" style="background-image: url(./img/place-holders/5.jpg)">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class = "fav-boxing col-12">
+                    <div class = "col-8">
+                            <h4>Nasr City</h4>
+                            <p>This is a Cool Paragraph YEAAAAAAAAAAAAAA</p>
+                            <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                    </div>
+                    <div class="col-4">
+                            <img class="fav-img" style="background-image: url(./img/place-holders/5.jpg)">
+
+                    </div>
+
+                </div>
+                <div class = "fav-boxing col-12">
+                        <div class = "col-8">
+                                <h4>Nasr City</h4>
+                                <p>This is a Cool Paragraph YEAAAAAAAAAAAAAA</p>
+                                <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                        </div>
+                        <div class="col-4">
+                                <h4>Nasr City</h4>
+                                <p>This is a Cool Paragraph YEAAAAAAAAAAAAAA</p>
+                                <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                        </div>
+    
+                    </div>
+                    <div class = "fav-boxing col-12">
+                            <div class = "col-8">
+                                    <h4>Nasr City</h4>
+                                    <p>This is a Cool Paragraph YEAAAAAAAAAAAAAA</p>
+                                    <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                            </div>
+                            <div class="col-4">
+                                    <h4>Nasr City</h4>
+                                    <p>This is a Cool Paragraph YEAAAAAAAAAAAAAA</p>
+                                    <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                            </div>
         
+                        </div> -->
+            
+
+        </div>
     </section>
 
-    <nav id="bottomNavBar" role = "navigation">
-        <a onclick="goToRoute('home')"class="bottomNavElm active"><i class="material-icons">home</i></a>
+    <nav id="bottomNavBar" role="navigation">
+        <a onclick="goToRoute('home')" class="bottomNavElm active"><i class="material-icons">home</i></a>
         <a href="" class="bottomNavElm"><i class="material-icons">date_range</i></a>
         <a href="" class="bottomNavElm centerElm"><i class="material-icons">list_alt</i></a>
         <a href="" class="bottomNavElm"><i class="material-icons">360</i></a>
         <a href="" class="bottomNavElm"><i class="material-icons">question_answer</i></a>
     </nav>
     <script src="./script.js"></script>
-    <!--Mario's Part-->
-    
+
 </body>
 
 </html>

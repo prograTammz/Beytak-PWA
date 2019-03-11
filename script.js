@@ -158,9 +158,9 @@ function fillContent(page){
                 (content)=>{
                     document.getElementById("pageContent").innerHTML = content;
                     //temp placement
-                    fillCityCard(".city-card-inner");
-                    fillNewCard(".news-card-inner ");
-                    fillContWithBigCard(".featured-home-container");
+                    //fillCityCard(".city-card-inner");
+                    //fillNewCard(".news-card-inner ");
+                    //fillContWithBigCard(".featured-home-container");
                 }
             );
         }
