@@ -61,6 +61,21 @@ function fillContWithBigCard(id,data){
             
         };
 }   
+function fillCityCard(selector){
+    let card = 
+    `<div class="city-card">
+        <div class="city-card-img col-12"role="img" alt="A picture of a city" style="background-image: url('./img/place-holders/nasrcity.jpg')">
+        </div>
+        <h5 class="city-card-head">Nasr City</h5>
+        <p class="city-card-subhead">Cairo</p>
+    </div>`;
+    let container = document.querySelector(selector);
+    for (let i = 0; i < 10; i++) {
+       container.innerHTML += card;
+        
+    }
+    container.style.width = 10*155 +"px";
+}
 //toggleDrawer, scrolls the page to the top with 2 approaches one for all
 //browser support and one for IOS safari support,
 //then it will stop the scrolling in the body object.
@@ -81,6 +96,7 @@ function toggleDrawer(event){
 //init function that fills the page with home.html when page is loaded
 function init(){
     fillContent("home");
+    
 }
 //route class, usage: new Route(name,htmlname,init).
 //name ex:home,aboutus.
@@ -115,6 +131,8 @@ function fillContent(page){
             res.text().then(
                 (content)=>{
                     document.getElementById("pageContent").innerHTML = content;
+                    //temp placement
+                    fillCityCard(".city-card-inner");
                 }
             );
         }
@@ -123,5 +141,5 @@ function fillContent(page){
    
 // fillContWithBigCard("pageContent");
 init();
-   
+
     
