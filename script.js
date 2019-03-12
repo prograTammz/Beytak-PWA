@@ -29,6 +29,7 @@ let search = new Route('search','search.html',()=>{
     fillElm(cityCard, ".search-explore-card-inner", 10, true, 155);
     fillElm(favCard, ".search-result-card-inner", 10);
 })
+//When a new Route is being added it should be also pleace in the Routes array (missing part)
 let Routes = [home,favs,profile,search,posts];
 let Router = [home];
 
