@@ -79,6 +79,7 @@ function goToRoute(name){
         elms[i].classList.remove("active");
         
     }
+    document.querySelector("."+route.name).classList.add("active");
     if(document.getElementById("navigation-drawer").classList[0] == "show-drawer"){
         toggleDrawer();
     }
