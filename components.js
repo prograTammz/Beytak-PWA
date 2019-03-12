@@ -63,11 +63,22 @@ let cityCard = `<div class="city-card">
                     <p class="city-card-subhead">Cairo</p>
                 </div>`;
 
-let newsCard = `<div class="news-card">
+
+let newsCardScroll = `<div class="news-card-scroll">
                     <div class="news-card-img col-12"role="img" aria-label="A picture of a new" style="background-image: url('./img/place-holders/news.jpg')">
                     </div>
                     <h5 class="news-card-head">New project in the new capital</h5>
                     <p class="news-card-desc">Greyhound divisively hello coldly wonderfully marginally far…</p>
+                </div>`;
+let newsCard = `<div class="col-es-4 col-s-6 col-4">
+                    <div class="news-outer-space">
+                    <div class="news-card">
+                    <div class="news-card-img col-12"role="img" aria-label="A picture of a new" style="background-image: url('./img/place-holders/news.jpg')">
+                    </div>
+                    <h5 class="news-card-head">New project in the new capital</h5>
+                    <p class="news-card-desc">Greyhound divisively hello coldly wonderfully marginally far…</p>
+                    </div>
+                    </div>
                 </div>`;
 //The col-3 Indicates that Big Screens (Desktops and Laptops usually) Each Container
 //Takes 1/4 of The Page.

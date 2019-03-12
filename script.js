@@ -12,7 +12,7 @@ function Route(name,htmlName,builder){
 //Routing Objects
 let home = new Route('home','home.html',()=>{
     fillElm(cityCard, ".city-card-inner", 10, true, 155);
-    fillElm(newsCard,".news-card-inner",10,true,300);
+    fillElm(newsCardScroll,".news-card-inner",10,true,300);
     fillElm(assetDetail, ".featured-home-container",4);
 });
 //Fills The fav-body with 12 Items instead of Writting it 12 Times.
@@ -29,8 +29,11 @@ let search = new Route('search','search.html',()=>{
     fillElm(cityCard, ".search-explore-card-inner", 10, true, 155);
     fillElm(favCard, ".search-result-card-inner", 10);
 })
+let news = new Route('news','news.html',()=>{
+    fillElm(newsCard, ".news-page-Container",10);
+})
 //When a new Route is being added it should be also pleace in the Routes array (missing part)
-let Routes = [home,favs,profile,search,posts];
+let Routes = [home,favs,profile,search,posts,news];
 let Router = [home];
 
 //init function that fills the page with home.html when page is loaded
