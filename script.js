@@ -1,4 +1,24 @@
 
+//route class, usage: new Route(name,htmlname,init).
+//name ex:home,aboutus.
+//htmlName ex: home.html,aboutus.html
+//builder: function that has building functions the will fill
+function Route(name,htmlName,builder){
+    this.name = name;
+    this.htmlName = htmlName;
+    this.builder = builder;
+}
+
+//Routing Objects
+let home = new Route('home','home.html',()=>{
+    fillElm(cityCard, ".city-card-inner", 10, true, 155);
+    fillElm(newsCard,".news-card-inner",10,true,300);
+    fillElm(assetDetail, ".featured-home-container",4);
+});
+let Router = [home];
+
+
+
 function fillElm(elm,selector,count,scroll = false ,width = 0){
     let container = document.querySelector(selector);
     for (let i = 0; i < count; i++) {
@@ -27,27 +47,9 @@ function toggleDrawer(event){
     }
 }
 
-//route class, usage: new Route(name,htmlname,init).
-//name ex:home,aboutus.
-//htmlName ex: home.html,aboutus.html
-//init: means if it will be run by init function as start route (later on)
-function Route(name,htmlName,init,builder){
-    this.name = name;
-    this.htmlName = htmlName;
-    this.init = init;
-    this.builder = builder;
-}
-let home = new Route('home','home.html',true,()=>{
-    fillElm(cityCard, ".city-card-inner", 10, true, 155);
-    fillElm(newsCard,".news-card-inner",10,true,300);
-    fillElm(assetDetail, ".featured-home-container",4);
-});
-let Router = [home];
-//init function that fills the page with home.html when page is loaded
-function init(){
-    goToRoute(Router[0].name);
-    
-}
+
+
+//Listens to any change to the hash(ex:google.com/#ahashlink) and routes to it
  window.addEventListener('hashchange',function(e){
      if(window.location.hash == ""){
          goToRoute('home');
@@ -93,6 +95,10 @@ function fillContent(page){
             );
         }
     );
+}
+//init function that fills the page with home.html when page is loaded
+function init(){
+    goToRoute(Router[0].name);
 }
 init();
 
