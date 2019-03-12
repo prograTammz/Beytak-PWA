@@ -69,7 +69,9 @@ let newsCard = `<div class="news-card">
                     <h5 class="news-card-head">New project in the new capital</h5>
                     <p class="news-card-desc">Greyhound divisively hello coldly wonderfully marginally far…</p>
                 </div>`;
-let favCard = `<div class="fav-container col-es-4 col-s-6 col-4">
+//The col-3 Indicates that Big Screens (Desktops and Laptops usually) Each Container
+//Takes 1/4 of The Page.
+let favCard = `<div class="fav-container col-es-4 col-s-6 col-3">
                     <div class="card-outer-space">
                         <div class="fav-card row">
                             <div class="col-8">
@@ -87,3 +89,24 @@ let favCard = `<div class="fav-container col-es-4 col-s-6 col-4">
                         </div>
                     </div>
                 </div>`;
+
+let postCard = `<div class="posts-container col-es-4 col-s-6 col-4">
+ <div class="card-outer-space">
+     <div class="posts-card row">
+         <div class="col-8">
+             <div>
+                 <h4>Offer ID : 12345678</h4>
+                 <p>Super Lux apartment in nasrcity overlooking makram ebid street</p>
+                 <button class="posts-details-button"><span class="posts-details-text">Details</span></button>
+             </div>
+         </div>
+         <div class="col-4">
+             <div>
+                 <img class="posts-img" style="background-image: url(./img/place-holders/5.jpg)">
+                 <p class = "offerStatusApproved">Approved</p>
+             </div>
+         </div>
+     </div>
+ </div>
+</div>
+ `;

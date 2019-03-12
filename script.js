@@ -19,6 +19,9 @@ let home = new Route('home','home.html',()=>{
 let favs = new Route('favs','favs.html',()=>{
     fillElm(favCard, ".fav-body", 12);
 });
+let posts = new Route('posts', 'posts.html',()=>{
+    fillElm(postCard, ".posts-body", 12);
+});
 let profile = new Route('profile','profile.html',()=>{
     
 });

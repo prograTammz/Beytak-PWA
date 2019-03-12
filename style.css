@@ -627,10 +627,47 @@ a{
     margin: 20px auto;
 }
 /* ------------------------------------------------------------------- */
+.posts-card{
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.20);
+}
+.posts-card h4, .posts-card p,.posts-card button{
+    margin-left: 20px;
+}
+.offerStatusApproved{
+    color: #67C95A;
+}
+.posts-img{
+    width: 90px;
+    height: 90px;
+    display: block;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    margin: 20px auto;
+}
+.posts-details-button {
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 0px;
+}
+.posts-details-text{
+    font-family: "Roboto", sans-serif;
+    color: #436885;
+}
 
 @media only screen and (max-width: 500px) {
     /* mobile break points */
     .fav-img {
+        width: 80px;
+        height: 80px;
+    }
+    .posts-img {
         width: 80px;
         height: 80px;
     }
@@ -639,6 +676,10 @@ a{
 @media only screen and (min-width: 501px) and (max-width: 900px) {
     /* Tablet breakpoints */
     .fav-img {
+        width: 80px;
+        height: 80px;
+    }
+    .posts-img {
         width: 80px;
         height: 80px;
     }
