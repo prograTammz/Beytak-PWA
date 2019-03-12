@@ -57,14 +57,14 @@ let assetDetail = `<div class="card-asset-container col-es-4 col-s-6 col-4">
 
 
 let cityCard = `<div class="city-card">
-                    <div class="city-card-img col-12"role="img" alt="A picture of a city" style="background-image: url('./img/place-holders/nasrcity.jpg')">
+                    <div class="city-card-img col-12"role="img" aria-label="A picture of a city" style="background-image: url('./img/place-holders/nasrcity.jpg')">
                     </div>
                     <h5 class="city-card-head">Nasr City</h5>
                     <p class="city-card-subhead">Cairo</p>
                 </div>`;
 
 let newsCard = `<div class="news-card">
-                    <div class="news-card-img col-12"role="img" alt="A picture of a city" style="background-image: url('./img/place-holders/news.jpg')">
+                    <div class="news-card-img col-12"role="img" aria-label="A picture of a new" style="background-image: url('./img/place-holders/news.jpg')">
                     </div>
                     <h5 class="news-card-head">New project in the new capital</h5>
                     <p class="news-card-desc">Greyhound divisively hello coldly wonderfully marginally far…</p>

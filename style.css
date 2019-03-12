@@ -258,12 +258,12 @@ body {
 }
 
 .active {
-    color: #517FA4;
+    color: #436885;
 
 }
 
 .centerElm {
-    background-color: #517FA4;
+    background-color: #436885;
     text-decoration: none;
     height: 56px;
     width: 56px;
@@ -300,7 +300,7 @@ body {
 }
 
 .navTitle {
-    color: #517FA4;
+    color: #436885;
     font-size: 22px;
     font-weight: 600;
     font-family: 'Tenor sans', sans-serif;
@@ -336,7 +336,7 @@ body {
 /* ------------------------------------------------------------------- */
 .card-asset-type,
 .card-asset-loc {
-    color: #517FA4;
+    color: #436885;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
@@ -344,7 +344,7 @@ body {
 }
 
 .card-asset-icon {
-    color: #517FA4;
+    color: #436885;
 }
 
 .icon-container i {
@@ -612,7 +612,7 @@ body {
 }
 .fav-details-text{
     font-family: "Roboto", sans-serif;
-    color: #517FA4;
+    color: #436885;
 }
 .fav-img {
     width: 90px;
