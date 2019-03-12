@@ -29,7 +29,7 @@ let search = new Route('search','search.html',()=>{
     fillElm(cityCard, ".search-explore-card-inner", 10, true, 155);
     fillElm(favCard, ".search-result-card-inner", 10);
 })
-let Routes = [home,favs,profile,search];
+let Routes = [home,favs,profile,search,posts];
 let Router = [home];
 
 //init function that fills the page with home.html when page is loaded
