@@ -8,7 +8,10 @@ body {
     position: relative;
     color: #575757;
 }
-
+a{
+    text-decoration: none;
+    color: #575757;
+}
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
