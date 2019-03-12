@@ -25,7 +25,11 @@ let posts = new Route('posts', 'posts.html',()=>{
 let profile = new Route('profile','profile.html',()=>{
     
 });
-let Routes = [home,favs,profile];
+let search = new Route('search','search.html',()=>{
+    fillElm(cityCard, ".search-explore-card-inner", 10, true, 155);
+    fillElm(favCard, ".search-result-card-inner", 10);
+})
+let Routes = [home,favs,profile,search];
 let Router = [home];
 
 //init function that fills the page with home.html when page is loaded
@@ -65,10 +69,11 @@ function toggleDrawer(event){
 
 //Listens to any change to the hash(ex:google.com/#ahashlink) and routes to it
  window.addEventListener('hashchange',function(e){
-     if(window.location.hash == ""){
-         goToRoute('home');
-     }else{
+     if(window.location.hash != "home"){
         goToRoute(window.location.hash.substr(1));
+         
+     }else{
+        goToRoute('home');
      }
      
  });
@@ -77,7 +82,7 @@ function toggleDrawer(event){
 //if the navigation drawer is open it will toggle it.
 function goToRoute(name){
     let route = Routes.find((route)=>route.name == name)
-    Router.push(route);
+        Router.push(route);
     window.location.hash = name;
     fillContent(name,route);
     
@@ -113,7 +118,11 @@ function fillContent(page,route){
         }
     );
 }
-
+function previousPage(){
+    Router.pop();
+    let nextRoute = Router.pop();
+    goToRoute(nextRoute.name);
+}
 init();
 
     
