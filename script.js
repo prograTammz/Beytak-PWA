@@ -15,9 +15,16 @@ let home = new Route('home','home.html',()=>{
     fillElm(newsCard,".news-card-inner",10,true,300);
     fillElm(assetDetail, ".featured-home-container",4);
 });
+let favs = new Route('favs','favs.html',()=>{
+    fillElm(favCard, ".fav-body", 10);
+});
+let Routes = [home,favs];
 let Router = [home];
 
-
+//init function that fills the page with home.html when page is loaded
+function init(){
+    goToRoute(Router[0].name);
+}
 
 function fillElm(elm,selector,count,scroll = false ,width = 0){
     let container = document.querySelector(selector);
@@ -53,18 +60,19 @@ function toggleDrawer(event){
  window.addEventListener('hashchange',function(e){
      if(window.location.hash == ""){
          goToRoute('home');
+     }else{
+        goToRoute(window.location.hash.substr(1));
      }
-     goToRoute(window.location.hash.substr(1));
+     
  });
 //goToRoute, fills the page with the required path by the name
 //loops over each bottomNavelement and remove active css class
 //if the navigation drawer is open it will toggle it.
 function goToRoute(name){
-    if(name != "home"){
-        Router.push(name);
-    }
+    let route = Routes.find((route)=>route.name == name)
+    Router.push(route);
     window.location.hash = name;
-    fillContent(name);
+    fillContent(name,route);
     
     var elms = document.getElementsByClassName("bottomNavElm");
     for (let i = 0; i < elms.length; i++) {
@@ -79,27 +87,20 @@ function goToRoute(name){
 //it take page name then make a fetch request, after it gets the html
 //file it will turn it to text, then it will await and place the content
 //in the pageContent DOM element
-function fillContent(page){
+function fillContent(page,route){
     fetch(`./views/${page}.html`).then(
         function(res){
             res.text().then(
                 (content)=>{
                     document.getElementById("pageContent").innerHTML = content;
-                    for (const route of Router) {
-                        if(route.name == page){
-                            route.builder();
-                        }
-                    }
+                    route.builder();
                     
                 }
             );
         }
     );
 }
-//init function that fills the page with home.html when page is loaded
-function init(){
-    goToRoute(Router[0].name);
-}
+
 init();
 
     

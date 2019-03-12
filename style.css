@@ -592,15 +592,13 @@ body {
 /* ---------------------------------------------------------------------- */
 /* --------------------------Fav and Like Page-------------------------- */
 /* ------------------------------------------------------------------- */
-.fav-container{
-    display: inline-block;
-    flex-direction: row;
-    justify-content: space-around;
-    padding:20px;
+.fav-card{
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.20);
 }
-
+.fav-card h4, .fav-card p,.fav-card button{
+    margin-left: 20px;
+}
 /*Styling Details Buttons*/
 .fav-details-button {
     background-color: Transparent;
@@ -617,21 +615,30 @@ body {
     color: #517FA4;
 }
 .fav-img {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
+    display: block;
     border-radius: 8px;
     background-position: center;
     background-size: cover;
+    margin: 20px auto;
 }
 /* ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 500px) {
     /* mobile break points */
+    .fav-img {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 @media only screen and (min-width: 501px) and (max-width: 900px) {
     /* Tablet breakpoints */
-
+    .fav-img {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 @media only screen and (min-width: 901px) {

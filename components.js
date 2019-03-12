@@ -69,3 +69,21 @@ let newsCard = `<div class="news-card">
                     <h5 class="news-card-head">New project in the new capital</h5>
                     <p class="news-card-desc">Greyhound divisively hello coldly wonderfully marginally far…</p>
                 </div>`;
+let favCard = `<div class="fav-container col-es-4 col-s-6 col-4">
+                    <div class="card-outer-space">
+                        <div class="fav-card row">
+                            <div class="col-8">
+                                <div>
+                                    <h4>Nasr City</h4>
+                                    <p>Super Lux apartment in nasrcity overlooking makram ebid street</p>
+                                    <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div>
+                                    <img class="fav-img" style="background-image: url(./img/place-holders/5.jpg)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;

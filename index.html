@@ -50,7 +50,7 @@
     <nav id="topNavBar" role="navigation">
         <a class="navMenu ancElm" tabindex="0" role="button" onclick="toggleDrawer(event)"><i class="material-icons">menu</i></a>
         <a class="navTitle">Beytak</a>
-        <a class="navFav ancElm " onclick="goToRoute('favs')" role="button"><i class="material-icons">favorite</i></a>
+        <a class="navFav ancElm " href="#favs" role="button"><i class="material-icons">favorite</i></a>
         <a class="navSearch ancElm " role="button" href="google.com"><i class="material-icons">search</i></a>
         <a class="ancElm deskItems" role="link" href="">SIGN UP</a>
         <a class="ancElm deskItems" role="link" href="">LOGIN</a>
@@ -84,7 +84,7 @@
                 <p class="drawer-item-title">My posts</p>
             </a>
 
-            <a role="button" onclick="goToRoute('favs')" class="drawer-item-container row">
+            <a role="button" href="#favs" class="drawer-item-container row">
                 <div class="icon-container">
                     <i class="material-icons center-vertically">favorite</i>
                 </div>
@@ -100,7 +100,7 @@
                 <p class="drawer-item-title">News & articles</p>
             </a>
 
-            <a onclick="goToRoute('advices')" role="button" class="drawer-item-container row">
+            <a href="#advices" role="button" class="drawer-item-container row">
                 <div class="icon-container">
                     <i class="material-icons center-vertically">error</i>
                 </div>
@@ -142,9 +142,9 @@
     </section>
 
     <nav id="bottomNavBar" role="navigation">
-        <a onclick="goToRoute('home')" class="bottomNavElm active"><i class="material-icons">home</i></a>
+        <a href="#home" class="bottomNavElm active"><i class="material-icons">home</i></a>
         <a href="" class="bottomNavElm"><i class="material-icons">date_range</i></a>
-        <a onclick="goToRoute('assetListing')" class="bottomNavElm centerElm"><i class="material-icons">list_alt</i></a>
+        <a href="#assetListing" class="bottomNavElm centerElm"><i class="material-icons">list_alt</i></a>
         <a href="" class="bottomNavElm"><i class="material-icons">360</i></a>
         <a href="" class="bottomNavElm"><i class="material-icons">question_answer</i></a>
     </nav>
