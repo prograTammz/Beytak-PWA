@@ -18,7 +18,10 @@ let home = new Route('home','home.html',()=>{
 let favs = new Route('favs','favs.html',()=>{
     fillElm(favCard, ".fav-body", 10);
 });
-let Routes = [home,favs];
+let profile = new Route('profile','profile.html',()=>{
+    
+});
+let Routes = [home,favs,profile];
 let Router = [home];
 
 //init function that fills the page with home.html when page is loaded
@@ -79,7 +82,12 @@ function goToRoute(name){
         elms[i].classList.remove("active");
         
     }
-    document.querySelector("."+route.name).classList.add("active");
+    try {
+        document.querySelector("."+route.name).classList.add("active");
+    } catch (error) {
+        console.log(`%c There is an error about not finding a DOM element: ${error} `, 'background: #333333; color: white; padding: 20px; border-radius: 10px; font-family: Roboto');
+    }
+    
     if(document.getElementById("navigation-drawer").classList[0] == "show-drawer"){
         toggleDrawer();
     }
