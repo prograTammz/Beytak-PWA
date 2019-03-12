@@ -15,8 +15,9 @@ let home = new Route('home','home.html',()=>{
     fillElm(newsCard,".news-card-inner",10,true,300);
     fillElm(assetDetail, ".featured-home-container",4);
 });
+//Fills The fav-body with 12 Items instead of Writting it 12 Times.
 let favs = new Route('favs','favs.html',()=>{
-    fillElm(favCard, ".fav-body", 10);
+    fillElm(favCard, ".fav-body", 12);
 });
 let profile = new Route('profile','profile.html',()=>{
     
