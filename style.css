@@ -590,39 +590,38 @@ body {
 
 
 /* ---------------------------------------------------------------------- */
-/* --------------------------Fav and Like Page---------------------------------- */
+/* --------------------------Fav and Like Page-------------------------- */
 /* ------------------------------------------------------------------- */
 .fav-container{
-display: inline-block;
-flex-direction: row;
-justify-content: space-around;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:20px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.20);
 }
 
 /*Styling Details Buttons*/
 .fav-details-button {
     background-color: Transparent;
-    background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 0px;
 }
 .fav-details-text{
     font-family: "Roboto", sans-serif;
     color: #517FA4;
 }
-.fav-boxing{
-    border: 3px black;
-    border-radius: 10px;
-    box-shadow: azure;
-    margin-right: 30px;
-}
 .fav-img {
     width: 120px;
     height: 120px;
+    border-radius: 8px;
     background-position: center;
     background-size: cover;
-    /*box-shadow:5px;*/
 }
 /* ------------------------------------------------------------------- */
 

@@ -132,6 +132,7 @@ function Route(name,htmlName,init){
     this.name = name;
     this.htmlName = htmlName;
     this.init = init;
+    this.builder = function(){};
 }
 //goToRoute, fills the page with the required path by the name
 //loops over each bottomNavelement and remove active css class
