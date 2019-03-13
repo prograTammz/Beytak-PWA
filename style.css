@@ -605,7 +605,16 @@ a{
     white-space: normal;
     margin: 20px 10px;
 }
-
+.news-card-button{
+    border: none;
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+    background-color: transparent;
+    margin: 0px 0px 10px 10px;
+    color: #436885;
+    cursor: pointer;
+    font-size: 14px;
+}
 .search-bar-input{
     padding: 0;
     border: 0;

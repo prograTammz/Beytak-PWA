@@ -69,6 +69,7 @@ let newsCardScroll = `<div class="news-card-scroll">
                     </div>
                     <h5 class="news-card-head">New project in the new capital</h5>
                     <p class="news-card-desc">Greyhound divisively hello coldly wonderfully marginally far…</p>
+                    <button onclick="location.hash='#housedetail'" class="news-card-button">Details</button>
                 </div>`;
 let newsCard = `<div class="col-es-4 col-s-6 col-4">
                     <div class="news-outer-space">
@@ -77,6 +78,7 @@ let newsCard = `<div class="col-es-4 col-s-6 col-4">
                     </div>
                     <h5 class="news-card-head">New project in the new capital</h5>
                     <p class="news-card-desc">Greyhound divisively hello coldly wonderfully marginally far…</p>
+                    <button onclick="location.hash='#housedetail'" class="news-card-button">Details</button>
                     </div>
                     </div>
                 </div>`;
