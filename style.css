@@ -84,9 +84,7 @@ a{
 .scroll-inner {
     display: flex;
 }
-.padding{
-    padding: 0px 15px;
-}
+
 /* ---------------------------------------------------------------------- */
 /* ----------------------Responsive Grid-------------------------------- */
 /* ------------------------------------------------------------------- */
@@ -716,14 +714,15 @@ a{
     color: #436885;
     border-radius: 4px;
     border: 2px solid;
+    padding: 0px;
 }
 .house-detail-payment-method{
     text-align: center;
     color: #436885;
     font-size: 14px;
     border: 2px solid;
-    margin-left: 10px;
-    margin-right:10px;
+    margin-left: 5px;
+    margin-right:5px;
     padding: 5px; 
     border-radius: 4px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
@@ -736,6 +735,7 @@ a{
 }
 .house-detail-price{
     font-weight: bold;
+    font-size: 14px;
 }
 .house-detail-price-icon{
     color: #436885;
@@ -808,5 +808,8 @@ a{
 
     .landing-Container {
         display: block;
+    }
+    .inner-padding{
+        padding: 0px 15px;
     }
 }
