@@ -34,7 +34,7 @@ let news = new Route('news','news.html',()=>{
 })
 //When a new Route is being added it should be also pleace in the Routes array (missing part)
 let Routes = [home,favs,housedetail,search,posts,news];
-let Router = [housedetail];
+let Router = [home];
 
 //init function that fills the page with home.html when page is loaded
 function init(){
