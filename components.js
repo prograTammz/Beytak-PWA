@@ -100,6 +100,24 @@ let favCard = `<div class="fav-container col-es-4 col-s-6 col-3">
                         </div>
                     </div>
                 </div>`;
+let similarCard = `<div class="fav-container col-12">
+                <div class="card-outer-space">
+                    <div class="fav-card row">
+                        <div class="col-7">
+                            <div>
+                                <h4>Nasr City</h4>
+                                <p>Super Lux apartment in nasrcity overlooking makram ebid street</p>
+                                <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div>
+                                <img class="fav-img" style="background-image: url(./img/place-holders/2.jpg)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;                
 
 let postCard = `<div class="posts-container col-es-4 col-s-6 col-4">
  <div class="card-outer-space">

@@ -22,8 +22,8 @@ let favs = new Route('favs','favs.html',()=>{
 let posts = new Route('posts', 'posts.html',()=>{
     fillElm(postCard, ".posts-body", 12);
 });
-let profile = new Route('profile','profile.html',()=>{
-    
+let housedetail = new Route('housedetail','housedetail.html',()=>{
+    fillElm(similarCard,'.house-detail-similar-houses',6);
 });
 let search = new Route('search','search.html',()=>{
     fillElm(cityCard, ".search-explore-card-inner", 10, true, 155);
@@ -33,8 +33,8 @@ let news = new Route('news','news.html',()=>{
     fillElm(newsCard, ".news-page-Container",10);
 })
 //When a new Route is being added it should be also pleace in the Routes array (missing part)
-let Routes = [home,favs,profile,search,posts,news];
-let Router = [home];
+let Routes = [home,favs,housedetail,search,posts,news];
+let Router = [housedetail];
 
 //init function that fills the page with home.html when page is loaded
 function init(){

@@ -84,7 +84,9 @@ a{
 .scroll-inner {
     display: flex;
 }
-
+.padding{
+    padding: 0px 15px;
+}
 /* ---------------------------------------------------------------------- */
 /* ----------------------Responsive Grid-------------------------------- */
 /* ------------------------------------------------------------------- */
@@ -204,6 +206,9 @@ a{
     }
     .col-s-12 {
         width: 100%;
+    }
+    .col-offset-s-3{
+        margin-left: 25%;
     }
     .col-offset-s-4{
         margin-left: 33.33%;
@@ -682,7 +687,76 @@ a{
     font-family: "Roboto", sans-serif;
     color: #436885;
 }
-
+.house-detail-desc{
+    font-family: "Roboto", sans-serif;
+    white-space: pre-line;
+}
+.house-detail-slideshow-imgs img{
+    width: 100%;
+}
+.house-detail-slideshow-thumbnails img{
+    width: 100%;
+}
+.house-detail-installment-button button{
+    margin: 20px;
+}
+.house-detail-installment-detail span{
+    font-weight: bold;
+    color: #436885;
+}
+.house-detail-square-price{
+    color: #436885;
+    font-size: 12px;
+    margin: 5px 40px;
+}
+.house-detail-installment-button button{
+    background-color: transparent;
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+    color: #436885;
+    border-radius: 4px;
+    border: 2px solid;
+}
+.house-detail-payment-method{
+    text-align: center;
+    color: #436885;
+    font-size: 14px;
+    border: 2px solid;
+    margin-left: 10px;
+    margin-right:10px;
+    padding: 5px; 
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+    max-width: 90px;
+}
+.disabled{
+    color: grey;
+    box-shadow: none;
+    opacity: 0.5;
+}
+.house-detail-price{
+    font-weight: bold;
+}
+.house-detail-price-icon{
+    color: #436885;
+    margin-top: 14px;
+}
+.house-detail-seller-phone-button{
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    color: #436885;
+    background-color: transparent;
+    border: 2px solid;
+    margin: 20px 0px;
+    padding: 20px 0;
+    border-radius: 4px;
+}
+.house-detail-seller-phone{
+    text-align: center;
+}
+.house-detail-seller-detail h4, .house-detail-seller-detail h5{
+    margin: 10px 0px;
+}
 @media only screen and (max-width: 500px) {
     /* mobile break points */
     .fav-img {
