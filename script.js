@@ -127,6 +127,11 @@ function previousPage(){
     let nextRoute = Router.pop();
     goToRoute(nextRoute.name);
 }
+function showNumber(event){
+    console.log(event.target);
+    event.target.classList.toggle("hide");
+    document.querySelector(".house-detail-seller-detail").classList.toggle("hide");
+}
 init();
 
     

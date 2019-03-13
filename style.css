@@ -85,6 +85,7 @@ a{
     display: flex;
 }
 
+
 /* ---------------------------------------------------------------------- */
 /* ----------------------Responsive Grid-------------------------------- */
 /* ------------------------------------------------------------------- */
@@ -241,6 +242,9 @@ a{
     align-content: center;
     width: 100%;
     flex-wrap: wrap;
+}
+.hide{
+    display: none;
 }
 .center{
     margin: auto;
@@ -747,12 +751,15 @@ a{
     color: #436885;
     background-color: transparent;
     border: 2px solid;
-    margin: 20px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 20px 0;
     border-radius: 4px;
 }
 .house-detail-seller-phone{
     text-align: center;
+    color: #436885;
+    font-size: 16px;
 }
 .house-detail-seller-detail h4, .house-detail-seller-detail h5{
     margin: 10px 0px;
