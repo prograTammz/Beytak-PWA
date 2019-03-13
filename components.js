@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////*********CARDS COMPONENTS*****////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-let assetDetail = `<div class="card-asset-container col-es-4 col-s-6 col-4">
+let assetDetail = `<a href="#housedetail" class="card-asset-container col-es-4 col-s-6 col-4">
                         <div class ="card-outer-space">
                             <div class="card-asset ">
                                 <div class="img-cont card-asset-img" style = "background-image: url(./asset-1.webp)">
@@ -53,7 +53,7 @@ let assetDetail = `<div class="card-asset-container col-es-4 col-s-6 col-4">
                                 </div>
                             </div>
                         </div>
-                    </div>`;
+                    </a>`;
 
 
 let cityCard = `<div class="city-card">
@@ -89,7 +89,7 @@ let favCard = `<div class="fav-container col-es-4 col-s-6 col-3">
                                 <div>
                                     <h4>Nasr City</h4>
                                     <p>Super Lux apartment in nasrcity overlooking makram ebid street</p>
-                                    <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                                    <button onclick="location.hash='#housedetail'" class="fav-details-button"><span class="fav-details-text">Details</span></button>
                                 </div>
                             </div>
                             <div class="col-5">
@@ -107,7 +107,7 @@ let similarCard = `<div class="fav-container col-12">
                             <div>
                                 <h4>Nasr City</h4>
                                 <p>Super Lux apartment in nasrcity overlooking makram ebid street</p>
-                                <button class="fav-details-button"><span class="fav-details-text">Details</span></button>
+                                <button onclick="location.hash='#housedetail'" class="fav-details-button"><span class="fav-details-text">Details</span></button>
                             </div>
                         </div>
                         <div class="col-5">
@@ -126,7 +126,7 @@ let postCard = `<div class="posts-container col-es-4 col-s-6 col-4">
              <div>
                  <h4>Offer ID : 12345678</h4>
                  <p>Super Lux apartment in nasrcity overlooking makram ebid street</p>
-                 <button class="posts-details-button"><span class="posts-details-text">Details</span></button>
+                 <button onclick="location.hash='#housedetail'" class="posts-details-button"><span class="posts-details-text">Details</span></button>
              </div>
          </div>
          <div class="col-4">
