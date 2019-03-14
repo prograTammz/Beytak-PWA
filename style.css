@@ -468,7 +468,7 @@ a{
     background-color: rgba(0, 0, 0, 0.16);
     z-index: 2;
     display: none;
-    overflow: hidden;
+    overflow: scroll;
     position: fixed;
 }
 
@@ -481,14 +481,16 @@ a{
 }
 
 #drawer-container {
-    height: 100%;
+    height: 100vh;
     overflow-y: scroll;
     background-color: #ffffff;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.20);
     padding: 20px;
 
 }
-
+.inner-drawer{
+    height: 800px;
+}
 .drawer-profile-pic {
     border-radius: 50%;
 }
