@@ -42,7 +42,7 @@ a{
     flex-wrap: wrap;
     margin-top: 55px;
     margin-bottom: 56px;
-    transition: all 1s ease-in;
+    transition: all 1s ease;
 }
 #pageLoading{
     height: 100vh;
