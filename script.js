@@ -117,12 +117,17 @@ function goToRoute(name){
 //in the pageContent DOM element
 function fillContent(page,route){
     document.getElementById("pageLoading").classList.toggle("show");
+    let pageContent = document.getElementById("#pageContent");
+    pageContent.classList.add("pre-animation");
     fetch(`./views/${page}.html`).then(
         function(res){
             res.text().then(
                 (content)=>{
                     document.getElementById("pageLoading").classList.toggle("show");
                     document.getElementById("pageContent").innerHTML = content;
+                    setTimeout(function(){
+                        pageContent.classList.remove('pre-animation')
+                    },100)
                     route.builder();
                     
                 }
