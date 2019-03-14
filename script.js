@@ -32,8 +32,14 @@ let search = new Route('search','search.html',()=>{
 let news = new Route('news','news.html',()=>{
     fillElm(newsCard, ".news-page-Container",10);
 })
+let advices = new Route('advices','advices.html',()=>{
+
+});
+let aboutus = new Route('aboutus','aboutus.html',()=>{
+
+});
 //When a new Route is being added it should be also pleace in the Routes array (missing part)
-let Routes = [home,favs,housedetail,search,posts,news];
+let Routes = [home,favs,housedetail,search,posts,news,advices,aboutus];
 let Router = [home];
 
 //init function that fills the page with home.html when page is loaded
@@ -110,10 +116,12 @@ function goToRoute(name){
 //file it will turn it to text, then it will await and place the content
 //in the pageContent DOM element
 function fillContent(page,route){
+    document.getElementById("pageLoading").classList.toggle("show");
     fetch(`./views/${page}.html`).then(
         function(res){
             res.text().then(
                 (content)=>{
+                    document.getElementById("pageLoading").classList.toggle("show");
                     document.getElementById("pageContent").innerHTML = content;
                     route.builder();
                     

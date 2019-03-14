@@ -43,7 +43,59 @@ a{
     margin-top: 55px;
     margin-bottom: 56px;
 }
-
+#pageLoading{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .loading-bar {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 10px;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+  }
+  .loading-bar:nth-child(1) {
+    background-color: #3498db;
+    animation-delay: 0;
+  }
+  .loading-bar:nth-child(2) {
+    background-color: #333333;
+    animation-delay: 0.2s;
+  }
+  .loading-bar:nth-child(3) {
+    background-color: #3498db;
+    animation-delay: 0.4s;
+  }
+  .loading-bar:nth-child(4) {
+    background-color: #333333;
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes loading {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(2, 2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+.show{
+      display: block;
+  }
 .img-cont {
     display: flex;
     align-content: center;
@@ -773,6 +825,13 @@ a{
 .house-detail-seller-detail h4, .house-detail-seller-detail h5{
     margin: 10px 0px;
 }
+.cover-img{
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.20);
+}
 @media only screen and (max-width: 500px) {
     /* mobile break points */
     .fav-img {
@@ -794,6 +853,9 @@ a{
     .posts-img {
         width: 80px;
         height: 80px;
+    }
+    .cover-img{
+        height: 300px;
     }
 }
 
@@ -828,4 +890,8 @@ a{
     .inner-padding{
         padding: 0px 15px;
     }
+    .cover-img{
+        height: 400px;
+    }
+    
 }
