@@ -4,7 +4,7 @@
 let assetDetail = `<a href="#housedetail" class="card-asset-container col-es-4 col-s-6 col-4">
                         <div class ="card-outer-space">
                             <div class="card-asset ">
-                                <div class="img-cont card-asset-img" style = "background-image: url(./asset-1.webp)">
+                                <div class="img-cont card-asset-img" style = "background-image: url(./img/asset-1.webp)">
                                 </div>
                                 <div class="card-asset-content">
                                     <div class="row">
