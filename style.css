@@ -94,7 +94,7 @@ a{
     }
   }
 .show{
-      display: block;
+      display: block !important;
   }
 .img-cont {
     display: flex;
