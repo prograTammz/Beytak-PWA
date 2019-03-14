@@ -65,7 +65,6 @@ function fillElm(elm,selector,count,scroll = false ,width = 0){
 function toggleDrawer(event){
     document.body.scrollTop= 0;
     document.documentElement.scrollTop = 0;
-    var scrollToggled = document.body.classList.toggle("no-scroll");
     var drawerToggled = document.getElementById("navigation-drawer").classList.toggle("show-drawer");
     var menuButtonInner = document.querySelector('.navMenu i');
     if(drawerToggled && scrollToggled && event.target.className == "material-icons"){
