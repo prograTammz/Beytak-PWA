@@ -21,7 +21,8 @@
             ],
             "phoneNumber":"01151537797",
             "postedHouses":[],
-            "profilePic":"../img/place-holders/profile.jpg"
+            "profilePic":"../img/place-holders/profile.jpg",
+            "password":"1234567"
         },{
             "firstName":"Fofa",
             "middleName":"Shawkey",
@@ -41,7 +42,8 @@
                 {"postId":"lxd-eru-256"},
                 {"postId":"lxd-eru-288"}
             ],
-            "profilePic":"../img/place-holders/profile.jpg"
+            "profilePic":"../img/place-holders/profile.jpg",
+            "password":"saba7elpasswordyabo3amo"
         },{
             "firstName":"Fayed",
             "middleName":"Mohammed",
@@ -52,7 +54,8 @@
             "phoneNumber":"01256732456",
             "postedHouses":[
             ],
-            "profilePic":"../img/place-holders/profile.jpg"
+            "profilePic":"../img/place-holders/profile.jpg",
+            "password":"12345678"
         }
     ]
 }
