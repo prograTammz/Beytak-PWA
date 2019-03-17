@@ -40,9 +40,13 @@ let aboutus = new Route('aboutus','aboutus.html',()=>{
 });
 let newsDetails = new Route('newsdetail','newsdetail.html',()=>{
     fillElm(browseNewsCard, ".more-news-container",4);
-})
+});
+let houselist = new Route('houselist','houselist.html',()=>{
+    fillElm(assetDetailScroll,".house-detail-card-container",10, true,300);
+    fillElm(favCard,".houses-container",8);
+});
 //When a new Route is being added it should be also pleace in the Routes array (missing part)
-let Routes = [home,favs,housedetail,search,posts,news,advices,aboutus,newsDetails];
+let Routes = [home,favs,housedetail,search,posts,news,advices,aboutus,newsDetails,houselist];
 let Router = [home];
 
 //init function that fills the page with home.html when page is loaded

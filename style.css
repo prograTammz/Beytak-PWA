@@ -449,6 +449,7 @@ a{
     margin: 5px 0;
     font-weight: bold;
     color: #575757;
+    white-space: normal;
 }
 
 .card-asset-img {
@@ -849,6 +850,9 @@ a{
 
 .more-news-container .news-outer-space{
     width: 100%;
+}
+.asset-card-scroll {
+    width: 280px;
 }
 @media only screen and (max-width: 500px) {
     /* mobile break points */
