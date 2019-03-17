@@ -1,9 +1,9 @@
 {
     "news":[
         {
-            "title":"",
-            "date":"",
-            "body":""
+            "title":"New project in the new capital",
+            "date":"27-9-2019",
+            "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt non nunc a euismod. Vivamus varius commodo ligula, non volutpat massa fermentum sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque auctor molestie aliquam. Donec dictum volutpat libero eu commodo. Fusce sed purus enim. Mauris vitae semper lorem."
         }
     ]
 }
