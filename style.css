@@ -847,6 +847,9 @@ a{
     margin: 10px 0px;
 }
 
+.more-news-container .news-outer-space{
+    width: 100%;
+}
 @media only screen and (max-width: 500px) {
     /* mobile break points */
     .fav-img {

@@ -69,7 +69,7 @@ let newsCardScroll = `<div class="news-card-scroll">
                     </div>
                     <h5 class="news-card-head">New project in the new capital</h5>
                     <p class="news-card-desc">Greyhound divisively hello coldly wonderfully marginally far…</p>
-                    <button onclick="location.hash='#housedetail'" class="news-card-button">Details</button>
+                    <button onclick="location.hash='#newsdetail'" class="news-card-button">Details</button>
                 </div>`;
 let newsCard = `<div class="col-es-4 col-s-6 col-4">
                     <div class="news-outer-space">
@@ -78,10 +78,22 @@ let newsCard = `<div class="col-es-4 col-s-6 col-4">
                     </div>
                     <h5 class="news-card-head">New project in the new capital</h5>
                     <p class="news-card-desc">Greyhound divisively hello coldly wonderfully marginally far…</p>
-                    <button onclick="location.hash='#housedetail'" class="news-card-button">Details</button>
+                    <button onclick="location.hash='#newsdetail'" class="news-card-button">Details</button>
                     </div>
                     </div>
                 </div>`;
+
+let browseNewsCard = `<div class="col-12">
+                        <div class="news-outer-space">
+                        <div class="news-card">
+                        <div class="news-card-img col-12"role="img" aria-label="A picture of a new" style="background-image: url('./img/place-holders/news.jpg')">
+                        </div>
+                        <h5 class="news-card-head">New project in the new capital</h5>
+                        <p class="news-card-desc">Greyhound divisively hello coldly wonderfully marginally far…</p>
+                        <button onclick="location.hash='#newsdetail'" class="news-card-button">Details</button>
+                        </div>
+                        </div>
+                    </div>`;
 //The col-3 Indicates that Big Screens (Desktops and Laptops usually) Each Container
 //Takes 1/4 of The Page.
 let favCard = `<div class="fav-container col-es-4 col-s-6 col-3">

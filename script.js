@@ -38,8 +38,11 @@ let advices = new Route('advices','advices.html',()=>{
 let aboutus = new Route('aboutus','aboutus.html',()=>{
 
 });
+let newsDetails = new Route('newsdetail','newsdetail.html',()=>{
+    fillElm(browseNewsCard, ".more-news-container",4);
+})
 //When a new Route is being added it should be also pleace in the Routes array (missing part)
-let Routes = [home,favs,housedetail,search,posts,news,advices,aboutus];
+let Routes = [home,favs,housedetail,search,posts,news,advices,aboutus,newsDetails];
 let Router = [home];
 
 //init function that fills the page with home.html when page is loaded
@@ -141,13 +144,13 @@ if(!window.Promise){
     window.Promise = Promise;
 }
 
-if('serviceWorker' in navigator){
-    //registering the service worker with global scope "/" the root folder, which is
-    //the default setting remove the object if not needed.
-    navigator.serviceWorker.register("sw.js",{scope: '/'})
-    //remove if you want, just showing it's a JS promise.
-    .then(()=>console.log("Service worker is working !"))
-}
+// if('serviceWorker' in navigator){
+//     //registering the service worker with global scope "/" the root folder, which is
+//     //the default setting remove the object if not needed.
+//     navigator.serviceWorker.register("sw.js",{scope: '/'})
+//     //remove if you want, just showing it's a JS promise.
+//     .then(()=>console.log("Service worker is working !"))
+// }
 
 function previousPage(){
     Router.pop();
