@@ -195,14 +195,23 @@ a{
 .col-12 {
     width: 100%;
 }
+.col-offset-1 {
+    margin-left: 8.33%;
+}
 .col-offset-4{
     margin-left: 33.33%;
 }
 .col-offset-6{
     margin-left: 50%;
 }
+.col-offset-7{
+    margin-left: 58.33%;
+}
 .col-offset-8{
     margin-left: 66.66%;
+}
+.col-offset-11{
+    margin-left: 91.66%;
 }
 .col-offset-12{
     margin-left: 100%;
@@ -444,7 +453,9 @@ a{
     font-size: 12px;
     color: #575757;
 }
-
+.asset-card-scroll {
+    width: 280px;
+}
 .card-asset-desc {
     margin: 5px 0;
     font-weight: bold;
@@ -851,8 +862,57 @@ a{
 .more-news-container .news-outer-space{
     width: 100%;
 }
-.asset-card-scroll {
-    width: 280px;
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: rgba(51, 51, 51, 0.50);
+}
+.modal-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.modal-inner{
+    background-color: white;
+    width: 90%;
+    margin: 0 5%;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23);
+}
+.modal-head{
+    padding: 10px;
+}
+.modal-content{
+    padding: 5px 30px;
+}
+.modal-content h2{
+    margin: 0px 0px 15px 0px;
+}
+.modal-input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    height: 32px;
+    padding: 5px 10px;
+    width: calc(100% - 20px);
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #436885;
+}
+.modal-submit{
+    padding: 10px;
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #436885;
+    color: #436885;
+    margin-bottom: 15px;
 }
 @media only screen and (max-width: 500px) {
     /* mobile break points */
