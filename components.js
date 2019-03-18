@@ -205,3 +205,15 @@ let postCard = `<div class="posts-container col-es-4 col-s-6 col-4">
  </div>
 </div>
  `;
+ let loginModal = `<div class="login-modal-content">
+ <h2>LOG IN</h2>
+ <form action="" method="post">
+     <label for="login-email">E-mail</label>
+     <input class="modal-input modal-email" type="email" name="login-email" id="login-email" placeholder="Email">
+     <label for="login-password">Password</label>
+     <input class="modal-input modal-password"type="password" name="login-password" id="login-password" placeholder="Password">
+     <p><strong>Invalid Email or Password.</strong> Please check your info is 
+             correctly writtern.</p>
+     <button type="submit" class="modal-submit col-5 col-offset-7">Next</button>
+ </form>
+</div>`;
