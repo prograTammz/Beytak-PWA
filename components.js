@@ -54,7 +54,67 @@ let assetDetail = `<a href="#housedetail" class="card-asset-container col-es-4 c
                             </div>
                         </div>
                     </a>`;
-
+function fillAssetDetail(data){
+    let content = "";
+    console.log(data.houses);
+    for (const house of data.houses) {
+        console.log(house);
+        content += 
+    `<a href="#housedetail" class="card-asset-container col-es-4 col-s-6 col-4">
+        <div class ="card-outer-space">
+            <div class="card-asset ">
+                <div class="img-cont card-asset-img" style = "background-image: url(./img/asset-1.webp)">
+                </div>
+                <div class="card-asset-content">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="card-asset-type">${house.type}</p>
+                        </div>
+                        <div class="col-6 center-vertically">
+                            <div class="icon-container">
+                                <i class="material-icons vertical-center card-asset-icon">location_on</i>
+                            </div>
+                            <p class="card-asset-loc">${house.city}</p>
+                        </div>
+                    </div>
+                    <p class="card-asset-desc">
+                        ${house.title}
+                    </p>
+                    <div class="row">
+                        <div class="col-6 center-vertically">
+                            <div class="icon-container">
+                                <i class="material-icons vertical-center card-asset-icon">local_hotel</i>
+                            </div>
+                            <p class="card-asset-detail">${house.roomCount} Bedroom</p>
+                        </div>
+                        <div class="col-6 center-vertically">
+                            <div class="icon-container">
+                                <i class="material-icons vertical-center card-asset-icon">weekend</i>
+                            </div>
+                            <p class="card-asset-detail">${house.livingRooms} Livingroom</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 center-vertically">
+                            <div class="icon-container">
+                                <i class="material-icons vertical-center card-asset-icon">settings_overscan</i>
+                            </div>
+                            <p class="card-asset-detail">${house.size} Sq.m</p>
+                        </div>
+                        <div class="col-6 center-vertically">
+                            <div class="icon-container">
+                                <i class="material-icons vertical-center card-asset-icon">attach_money</i>
+                            </div>
+                            <p class="card-asset-detail">${house.price} EGP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>`
+    }
+    return content;
+}
 let assetDetailScroll = `<a href="#housedetail" class="card-asset-container asset-card-scroll">
                     <div class ="card-outer-space">
                         <div class="card-asset ">

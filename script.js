@@ -13,7 +13,7 @@ function Route(name,htmlName,builder){
 let home = new Route('home','home.html',()=>{
     fillElm(cityCard, ".city-card-inner", 10, true, 155);
     fillElm(newsCardScroll,".news-card-inner",10,true,300);
-    fillElm(assetDetail, ".featured-home-container",4);
+    fillData(fillAssetDetail,".featured-home-container","houses");
 });
 //Fills The fav-body with 12 Items instead of Writting it 12 Times.
 let favs = new Route('favs','favs.html',()=>{
@@ -64,6 +64,16 @@ function fillElm(elm,selector,count,scroll = false ,width = 0){
         container.style.width = count*width +"px";
      }
 }
+function fillData(fun,selector,data){
+    let container = document.querySelector(selector);
+    fetch(`./data/${data}.json`).then((res)=>{
+        res.json().then((res)=>{
+            container.innerHTML = fun(res);
+        })
+    })
+    
+}
+
 //toggleDrawer, scrolls the page to the top with 2 approaches one for all
 //browser support and one for IOS safari support,
 //then it will stop the scrolling in the body object.
