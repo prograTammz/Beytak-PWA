@@ -183,7 +183,7 @@ let similarCard = `<div class="fav-container col-12">
                         </div>
                     </div>
                 </div>
-            </div>`;                
+            </div>`;
 
 let postCard = `<div class="posts-container col-es-4 col-s-6 col-4">
  <div class="card-outer-space">
@@ -205,7 +205,7 @@ let postCard = `<div class="posts-container col-es-4 col-s-6 col-4">
  </div>
 </div>
  `;
- let loginModal = `<div class="login-modal-content">
+let loginModal = `<div class="login-modal-content">
                     <h2>LOG IN</h2>
                     <form action="" method="post">
                         <label for="login-email">E-mail</label>

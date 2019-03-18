@@ -9,7 +9,7 @@
     <!-- for egde browser support -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- importing fonts and material icons -->
-    
+
     <link rel="stylesheet" href="style.css">
     <title>Beytak</title>
     <link rel="manifest" href="manifest.json">
@@ -48,7 +48,7 @@
 <body>
     <nav id="topNavBar" role="navigation">
         <a class="navMenu ancElm" tabindex="0" role="button" onclick="toggleDrawer(event)"><i class="material-icons">menu</i></a>
-        <a href= "#home" class="navTitle">Beytak</a>
+        <a href="#home" class="navTitle">Beytak</a>
         <a class="navFav ancElm " href="#favs" role="button"><i class="material-icons">favorite</i></a>
         <a class="navSearch ancElm " role="button" href="#search"><i class="material-icons">search</i></a>
         <a class="ancElm deskItems" role="link" href="">SIGN UP</a>
@@ -59,107 +59,109 @@
         <div id="drawer-container" class="col-es-3 col-s-6 col-3">
             <div class="inner-drawer">
 
-            
-            <img src="./img/profile.jpg" class="drawer-profile-pic col-3" alt="A person in the picture">
-            <h2 class="drawer-header">Ahmed Tamer</h2>
-            <p class="drawer-subtitle">Buyer</p>
-            <div class="divider"></div>
 
-            <a href="#profile"role="button" class="drawer-item-container row">
-                <div class="icon-container">
-                    <i class="material-icons center-vertically">person</i>
-                </div>
-                <p class="drawer-item-title">My profile</p>
-            </a>
+                <img src="./img/profile.jpg" class="drawer-profile-pic col-3" alt="A person in the picture">
+                <h2 class="drawer-header">Ahmed Tamer</h2>
+                <p class="drawer-subtitle">Buyer</p>
+                <div class="divider"></div>
 
-            <a role="button" class="drawer-item-container row">
-                <div class="icon-container">
-                    <i class="material-icons center-vertically">question_answer</i>
-                </div>
-                <p class="drawer-item-title">Messages</p>
-            </a>
-            <!--Added Posts Link here to Create Posts Page-->
-            <a role="button" href="#posts" class="drawer-item-container row">
-                <div class="icon-container">
-                    <i class="material-icons center-vertically">library_add</i>
-                </div>
-                <p class="drawer-item-title">My posts</p>
-            </a>
+                <a href="#profile" role="button" class="drawer-item-container row">
+                    <div class="icon-container">
+                        <i class="material-icons center-vertically">person</i>
+                    </div>
+                    <p class="drawer-item-title">My profile</p>
+                </a>
 
-            <a role="button" href="#favs" class="drawer-item-container row">
-                <div class="icon-container">
-                    <i class="material-icons center-vertically">favorite</i>
-                </div>
-                <p class="drawer-item-title">Likes/Favs</p>
-            </a>
+                <a role="button" class="drawer-item-container row">
+                    <div class="icon-container">
+                        <i class="material-icons center-vertically">question_answer</i>
+                    </div>
+                    <p class="drawer-item-title">Messages</p>
+                </a>
+                <!--Added Posts Link here to Create Posts Page-->
+                <a role="button" href="#posts" class="drawer-item-container row">
+                    <div class="icon-container">
+                        <i class="material-icons center-vertically">library_add</i>
+                    </div>
+                    <p class="drawer-item-title">My posts</p>
+                </a>
 
-            <div class="divider"></div>
+                <a role="button" href="#favs" class="drawer-item-container row">
+                    <div class="icon-container">
+                        <i class="material-icons center-vertically">favorite</i>
+                    </div>
+                    <p class="drawer-item-title">Likes/Favs</p>
+                </a>
 
-            <a role="button" href="#news"class="drawer-item-container row">
-                <div class="icon-container">
-                    <i class="material-icons center-vertically">local_library</i>
-                </div>
-                <p class="drawer-item-title">News & articles</p>
-            </a>
+                <div class="divider"></div>
 
-            <a href="#advices" role="button" class="drawer-item-container row">
-                <div class="icon-container">
-                    <i class="material-icons center-vertically">error</i>
-                </div>
-                <p class="drawer-item-title">Advices</p>
-            </a>
+                <a role="button" href="#news" class="drawer-item-container row">
+                    <div class="icon-container">
+                        <i class="material-icons center-vertically">local_library</i>
+                    </div>
+                    <p class="drawer-item-title">News & articles</p>
+                </a>
 
-            <a href="#houselist" role="button" class="drawer-item-container row">
-                <div class="icon-container">
-                    <i class="material-icons center-vertically">list_alt</i>
-                </div>
-                <p class="drawer-item-title">Properties List</p>
-            </a>
+                <a href="#advices" role="button" class="drawer-item-container row">
+                    <div class="icon-container">
+                        <i class="material-icons center-vertically">error</i>
+                    </div>
+                    <p class="drawer-item-title">Advices</p>
+                </a>
 
-            <a role="button" class="drawer-item-container row">
-                <div class="icon-container">
-                    <i class="material-icons center-vertically">360</i>
-                </div>
-                <p class="drawer-item-title">Tour schedule</p>
-            </a>
+                <a href="#houselist" role="button" class="drawer-item-container row">
+                    <div class="icon-container">
+                        <i class="material-icons center-vertically">list_alt</i>
+                    </div>
+                    <p class="drawer-item-title">Properties List</p>
+                </a>
 
-            <a role="button" class="drawer-item-container row">
-                <div class="icon-container">
-                    <i class="material-icons center-vertically">date_range</i>
-                </div>
-                <p class="drawer-item-title">Renting Schedule</p>
-            </a>
-            <a href="#aboutus" role="button" class="drawer-item-container row">
-                <div class="icon-container">
-                    <i class="material-icons center-vertically">help</i>
-                </div>
-                <p class="drawer-item-title">About us</p>
-            </a>
-        </div>
+                <a role="button" class="drawer-item-container row">
+                    <div class="icon-container">
+                        <i class="material-icons center-vertically">360</i>
+                    </div>
+                    <p class="drawer-item-title">Tour schedule</p>
+                </a>
+
+                <a role="button" class="drawer-item-container row">
+                    <div class="icon-container">
+                        <i class="material-icons center-vertically">date_range</i>
+                    </div>
+                    <p class="drawer-item-title">Renting Schedule</p>
+                </a>
+                <a href="#aboutus" role="button" class="drawer-item-container row">
+                    <div class="icon-container">
+                        <i class="material-icons center-vertically">help</i>
+                    </div>
+                    <p class="drawer-item-title">About us</p>
+                </a>
+            </div>
         </div>
         </div>
     </section>
     <section id="pageContent">
-        
-        
+
+
     </section>
 
-    <div class="modal-container">
-            <div class="modal-body col-es-4 col-s-8 col-4">
-                
-                <div class="modal-inner">
-                        <div class="modal-head">
-                                <a class="modal-close col-offset-11 col-1" onclick="closeModal()">
-                                        <i class="material-icons">close</i>
-                                </a>
-                        </div>
-                        <div class="modal-content">
-                            
-                            </div>
-                        </div>
-                
+    <!-- <div class="modal-container">
+        <div class="modal-body col-es-4 col-s-8 col-4">
+
+            <div class="modal-inner">
+                <div class="modal-head">
+                    <a class="modal-close col-offset-11 col-1" onclick="closeModal()">
+                        <i class="material-icons">close</i>
+                    </a>
+                </div>
+                <div class="modal-content">
+
+                </div>
+
+
             </div>
-    </div>
+
+        </div>
+    </div> -->
 
     <section id="pageLoading">
         <div class="spinner-container">
