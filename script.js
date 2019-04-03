@@ -1,3 +1,9 @@
+//JS promises pollyfil
+//as it checks if the Promise does exist on the browse or not,
+// if not it will use the pollyfil file
+if(!window.Promise){
+    window.Promise = Promise;
+}
 
 //route class, usage: new Route(name,htmlname,init).
 //name ex:home,aboutus.
@@ -154,10 +160,7 @@ function fillContent(page,route){
     );
 }
 
-if(!window.Promise){
-    window.Promise = Promise;
-}
-
+//Registering the service worker for the offline mechanism
 if('serviceWorker' in navigator){
     //registering the service worker with global scope "/" the root folder, which is
     //the default setting remove the object if not needed.
