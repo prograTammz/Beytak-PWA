@@ -190,6 +190,20 @@ function validatePassword(input1,input2){
     let regExp = RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
     return input1[0].value == input2[0].value && regExp.test(input1[0].value);
 }
+
+function openModal(modalName){
+    let modalContainer = document.querySelector(".modal-container");
+    let modalContent = document.querySelector(".modal-content");
+    
+    modalContainer.classList.add("show");
+    modalContent.innerHTML = modalName;
+
+}
+function closeModal(){
+    let modalContainer = document.querySelector(".modal-container");
+    modalContainer.classList.remove("show");
+}
+
 init();
 
     
