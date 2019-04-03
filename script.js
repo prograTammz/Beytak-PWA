@@ -174,13 +174,22 @@ function previousPage(){
     let nextRoute = Router.pop();
     goToRoute(nextRoute.name);
 }
-
 function showNumber(event){
     console.log(event.target);
     event.target.classList.toggle("hide");
     document.querySelector(".house-detail-seller-detail").classList.toggle("hide");
 }
 
+//these functions do validate email inputs
+function validateEmail(input) {
+    
+    let regExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regExp.test(input[0].value);
+}
+function validatePassword(input1,input2){
+    let regExp = RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
+    return input1[0].value == input2[0].value && regExp.test(input1[0].value);
+}
 init();
 
     
