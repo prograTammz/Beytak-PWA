@@ -51,8 +51,11 @@ let houselist = new Route('houselist','houselist.html',()=>{
     fillElm(assetDetailScroll,".house-detail-card-container",10, true,300);
     fillElm(favCard,".houses-container",8);
 });
+let register = new Route('register','register.html',()=>{
+
+});
 //When a new Route is being added it should be also pleace in the Routes array (missing part)
-let Routes = [home,favs,housedetail,search,posts,news,advices,aboutus,newsDetails,houselist];
+let Routes = [home,favs,housedetail,search,posts,news,advices,aboutus,newsDetails,houselist,register];
 let Router = [home];
 
 //init function that fills the page with home.html when page is loaded
