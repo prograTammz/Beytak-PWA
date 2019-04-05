@@ -9,49 +9,50 @@ if(!window.Promise){
 //name ex:home,aboutus.
 //htmlName ex: home.html,aboutus.html
 //builder: function that has building functions the will fill
-function Route(name,htmlName,builder){
+function Route(title,name,htmlName,builder){
+    this.title= title;
     this.name = name;
     this.htmlName = htmlName;
     this.builder = builder;
 }
 
 //Routing Objects
-let home = new Route('home','home.html',()=>{
+let home = new Route('Beytak','home','home.html',()=>{
     fillElm(cityCard, ".city-card-inner", 10, true, 155);
     fillElm(newsCardScroll,".news-card-inner",10,true,300);
     fillData(fillAssetDetail,".featured-home-container","houses");
 });
 //Fills The fav-body with 12 Items instead of Writting it 12 Times.
-let favs = new Route('favs','favs.html',()=>{
+let favs = new Route('Favourites','favs','favs.html',()=>{
     fillElm(favCard, ".fav-body", 12);
 });
-let posts = new Route('posts', 'posts.html',()=>{
+let posts = new Route('My posts','posts', 'posts.html',()=>{
     fillElm(postCard, ".posts-body", 12);
 });
-let housedetail = new Route('housedetail','housedetail.html',()=>{
+let housedetail = new Route('House Details','housedetail','housedetail.html',()=>{
     fillElm(similarCard,'.house-detail-similar-houses',6);
 });
-let search = new Route('search','search.html',()=>{
+let search = new Route('Search','search','search.html',()=>{
     fillElm(cityCard, ".search-explore-card-inner", 10, true, 155);
     fillElm(favCard, ".search-result-card-inner", 10);
 })
-let news = new Route('news','news.html',()=>{
+let news = new Route('News','news','news.html',()=>{
     fillElm(newsCard, ".news-page-Container",10);
 })
-let advices = new Route('advices','advices.html',()=>{
+let advices = new Route('Advices','advices','advices.html',()=>{
 
 });
-let aboutus = new Route('aboutus','aboutus.html',()=>{
+let aboutus = new Route('About us','aboutus','aboutus.html',()=>{
 
 });
-let newsDetails = new Route('newsdetail','newsdetail.html',()=>{
+let newsDetails = new Route('News Detail','newsdetail','newsdetail.html',()=>{
     fillElm(browseNewsCard, ".more-news-container",4);
 });
-let houselist = new Route('houselist','houselist.html',()=>{
+let houselist = new Route('Houses List','houselist','houselist.html',()=>{
     fillElm(assetDetailScroll,".house-detail-card-container",10, true,300);
     fillElm(favCard,".houses-container",8);
 });
-let register = new Route('register','register.html',()=>{
+let register = new Route('Register','register','register.html',()=>{
 
 });
 //When a new Route is being added it should be also pleace in the Routes array (missing part)
@@ -121,7 +122,8 @@ function goToRoute(name){
         Router.push(route);
     window.location.hash = name;
     fillContent(name,route);
-    
+    let title = document.querySelector('.navTitle');
+    title.innerHTML=route.title;
     var elms = document.getElementsByClassName("bottomNavElm");
     for (let i = 0; i < elms.length; i++) {
         elms[i].classList.remove("active");
