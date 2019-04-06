@@ -123,8 +123,14 @@ function goToRoute(name){
     window.location.hash = name;
     fillContent(name,route);
     actionNavButton(route);
+    recheckBottomNavActiveState(route);
     
+    if(document.getElementById("navigation-drawer").classList[0] == "show-drawer"){
+        toggleDrawer();
+    }
     
+}
+function recheckBottomNavActiveState(route){
     var elms = document.getElementsByClassName("bottomNavElm");
     for (let i = 0; i < elms.length; i++) {
         elms[i].classList.remove("active");
@@ -135,12 +141,9 @@ function goToRoute(name){
     } catch (error) {
         console.log(`%c There is an error about not finding a DOM element: ${error} `, 'background: #333333; color: white; padding: 20px; border-radius: 10px; font-family: Roboto');
     }
-    
-    if(document.getElementById("navigation-drawer").classList[0] == "show-drawer"){
-        toggleDrawer();
-    }
-    
-}
+};
+
+
 function actionNavButton(route){
     let title = document.querySelector('.navTitle');
     let returnButton = document.getElementById('top-nav-back');
