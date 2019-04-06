@@ -56,9 +56,7 @@ let assetDetail = `<a href="#housedetail" class="card-asset-container col-es-4 c
                     </a>`;
 function fillAssetDetail(data){
     let content = "";
-    console.log(data.houses);
     for (const house of data.houses) {
-        console.log(house);
         content += 
     `<a href="#housedetail" class="card-asset-container col-es-4 col-s-6 col-4">
         <div class ="card-outer-space">

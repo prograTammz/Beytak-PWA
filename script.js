@@ -185,7 +185,7 @@ if('serviceWorker' in navigator){
     //the default setting remove the object if not needed.
     navigator.serviceWorker.register("sw.js",{scope: '/'})
     //remove if you want, just showing it's a JS promise.
-    .then(()=>console.log("Service worker is working !"))
+    // .then(()=>console.log("Service worker is working !"))
 }
 
 function previousPage(){
@@ -194,7 +194,6 @@ function previousPage(){
     goToRoute(nextRoute.name);
 }
 function showNumber(event){
-    console.log(event.target);
     event.target.classList.toggle("hide");
     document.querySelector(".house-detail-seller-detail").classList.toggle("hide");
 }
