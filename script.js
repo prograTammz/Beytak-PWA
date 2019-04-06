@@ -122,8 +122,9 @@ function goToRoute(name){
         Router.push(route);
     window.location.hash = name;
     fillContent(name,route);
-    let title = document.querySelector('.navTitle');
-    title.innerHTML=route.title;
+    actionNavButton(route);
+    
+    
     var elms = document.getElementsByClassName("bottomNavElm");
     for (let i = 0; i < elms.length; i++) {
         elms[i].classList.remove("active");
@@ -139,6 +140,19 @@ function goToRoute(name){
         toggleDrawer();
     }
     
+}
+function actionNavButton(route){
+    let title = document.querySelector('.navTitle');
+    let returnButton = document.getElementById('top-nav-back');
+    let burgerButton = document.getElementById('top-nav-burger');
+    title.innerHTML=route.title;
+    if(route.name != "home"){
+        burgerButton.classList.add('hide');
+        returnButton.classList.add('show');
+    }else{
+        burgerButton.classList.remove('hide');
+        returnButton.classList.remove('show');
+    }
 }
 //it take page name then make a fetch request, after it gets the html
 //file it will turn it to text, then it will await and place the content
