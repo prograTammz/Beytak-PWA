@@ -186,7 +186,7 @@ function fillContent(page,route){
 if('serviceWorker' in navigator){
     //registering the service worker with global scope "/" the root folder, which is
     //the default setting remove the object if not needed.
-    navigator.serviceWorker.register("sw.js",{scope: '/'})
+    //navigator.serviceWorker.register("sw.js",{scope: '/'})
     //remove if you want, just showing it's a JS promise.
     // .then(()=>console.log("Service worker is working !"))
 }
