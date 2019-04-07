@@ -111,6 +111,12 @@ a{
     width: 100%;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.20);
 }
+.error-color{
+    color: #DE3C3C;
+}
+.error-border{
+    border:2px solid #DE3C3C !important;
+}
 /* ---------------------------------------------------------------------- */
 /* ----------------------Loading bars-------------------------------- */
 /* ------------------------------------------------------------------- */
@@ -1052,7 +1058,18 @@ input[type=range] {
     color: #436885;
     margin-bottom: 15px;
 }
-
+.modal-input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    height: 32px;
+    padding: 5px 10px;
+    width: calc(100% - 20px);
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #436885;
+    resize: none;
+}
 .modal-label{
     font-size: 18px;
 }
