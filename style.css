@@ -483,6 +483,9 @@ input[type=range] {
     color: #575757;
     margin: 0px 15px;
 }
+.bottomNavElmCenter {
+    margin-bottom: 35px;
+}
 
 .active {
     color: #436885;
