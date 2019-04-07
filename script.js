@@ -55,6 +55,12 @@ let houselist = new Route('Houses List','houselist','houselist.html',()=>{
 let register = new Route('Register','register','register.html',()=>{
 
 });
+let addnews = new Route('Add News','addnews','addnews.html',()=>{
+    
+});
+let addhouse = new Route('Add House','addhouse','addhouse.html',()=>{
+
+});
 //When a new Route is being added it should be also pleace in the Routes array (missing part)
 let Routes = [home,favs,housedetail,search,posts,news,advices,aboutus,newsDetails,houselist,register];
 let Router = [home];
