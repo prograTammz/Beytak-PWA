@@ -1,0 +1,17 @@
+<h2 class="col-12">Add a new article</h2>
+    <form action="" method="post">
+        <label for="addnews-title" class="error-color">Title:</label>
+        <input class="modal-input addnews-title error-border" type="text" name="addnews-title" id="addnews-title" placeholder="insert the article title">
+        <label for="addnews-article">Article:</label>
+        <textarea class="modal-input addnews-article" type="email" name="addnews-article" id="addnews-article"></textarea>
+        <div class="img-input-container">
+            <label class="img-input-button" for="file">
+                Add cover Photo
+             </label>
+        </div>
+        
+        <input class="img-input"type="file" id="file"name="pic" accept=".jpg, .jpeg" capture="camera">
+        <p class="error-color"><strong>Error</strong> Please check your info is 
+                correctly writtern.</p>
+        <button type="submit" class="modal-submit col-5 col-offset-7">Add new article</button>
+    </form>

@@ -1119,6 +1119,28 @@ position: relative;
     line-height: 1px;
     text-align: center;
 }
+.addnews-article{
+    resize: none;
+    font-family: "roboto",sans-serif;
+    height: 100px;
+}
+.img-input{
+    display: none;
+}
+.img-input-button{
+    padding: 10px;
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #436885;
+    color: #436885;
+    cursor: pointer;
+}
+.img-input-container{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
 @media only screen and (max-width: 500px) {
     /* mobile break points */
     .fav-img {
